@@ -1,0 +1,6 @@
+*.o
+*.a
+*~
+.svn
+units-test
+units-test-disabled

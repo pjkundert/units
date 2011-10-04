@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE>UNITS: A C++ Units Management Framework</TITLE>
+	<STYLE>
+	<!--
+		@page { size: 8.5in 11in }
+		P { font-family: "Arial", sans-serif }
+		A { font-family: "Arial", sans-serif }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-GB" BGCOLOR="#ffffff" DIR="LTR">
+
+<P><FONT SIZE=6>
+
+The &quot;UNITS&quot; C++ Units Management Framework
+
+</FONT></P>
+
+<P> The UNITS C++ units management framework provides enforcement of
+units in C++ mathematical equations.  Unless each values units are
+correctly solved for, the equation will resist being converted to a
+scalar type.</P>
+
+<P>The UNITS framework: </P>
+<UL>
+	<LI><P>	Requires no addition compilation or linkage to use.  It
+	is implemented in a single standard C++ header file.</P>
+
+	<LI><P> Low size overhead.  In fact, since all units management is
+	enforced by the C++ compiler, there should normally be no size
+	overhead at all.</P>
+
+	<LI><P> Low speed overhead.  All units management is enforced by the
+	C++ compiler.  Mathematical equations using units should be
+	just as fast as those without.  In fact, this can be tested,
+	by turning off the units management using a compile-time
+	definition.</P>
+</UL>
+
+<P> There may be subtle differences in type promotion within
+expressions involving units&lt;&gt;, which can result in different results with units checking
+disabled.  Therefore, it is recommended that units checking be either
+enabled OR disabled identically for both testing and production code.
+It could be used, for example, for checking that all units are
+properly accounted for, and then disabled for both automated unit
+testing and production.  However, since the units management is
+performed at compile time, it is recommended to simply leave it
+enabled. </P>
+
+<P><FONT SIZE=5>
+<B>How-To</B>
+</FONT></P>
+
+<P> Here is an example of some units managed equations.</P>
+
+<PRE>
+#include &lt;units&gt;
+
+// Convert mileage (US Gallons), to MPG (both US and Imperial), and L/100KM.
+typedef units::type&lt;float&gt
+                        sif_t;                                  // SI Units Types, over float
+sif_t                   sif;                                    // SI Constants
+sif_t::us               usf( sif );                             // US/Imperial Constants
+
+sif_t::Mileage          mileage = usf.Mile * 10 / usf.Gallon;
+float                   mpg     = mileage / usad.MPG;
+
+float                   eff     = sif_t::Unitless( 1 ) / mileage / sif.L_100KM;
+
+assert.ISEQUALDELTA( double( mpg ),     10.0000, 0.001 );
+assert.ISEQUALDELTA( double( eff ),     23.5215, 0.001 );
+
+sif_t::imperial         imf( sif );                             // Imperial Constants
+mpg                             = mileage / imf.MPG;
+assert.ISEQUALDELTA( double( mpg ),     12.0095, 0.001 );
+</PRE>
+
+
+<P><FONT SIZE=5>
+<B>Examples</B>
+</FONT></P>
+
+<P> See the unit tests <A HREF="../units-test.C">units-test.C</A> for
+many more examples.
+You can run the unit tests, and see their output
+<A HREF="http://enbridge.kundert.ca/cgi-bin/units/units-test">here</A>
+(the UNITS unit tests are implemented using
+<A HREF="http://enbridge.kundert.ca/cut/doc">CUT</A>)
+
+</P>
+
+<P> See the GNU Make file <A HREF="../GNUmakefile">GNUmakefile</A> for an
+example of how to enable or disable units.</P>
+
+<P><FONT SIZE=5>
+<B>Download</B>
+</FONT></P>
+
+<P> The latest version is always available in the units-#.#.#.tgz file,
+<A HREF="http://enbridge.kundert.ca/units/">here</A></P>
+
+<P> Copyright (C) 2005 Enbridge Inc. </P>
+
+<P> This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version. </P>
+
+<P> This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details. </P>
+
+<P> You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA. </P> 
+
+</BODY>
+</HTML>

@@ -1,0 +1,25 @@
+This directory contains the UNITS Management Framework.
+
+    The UNITS Framework is free software.  See the file COPYING for
+copying permission.  See the file INSTALL for installation
+instructions.
+
+    UNITS was developed at Enbridge Pipelines Inc. by Perry Kundert,
+but is based virtually verbatim on the fine work of Christopher Rettig
+(rettigcd@bigfoot.com).  His original units management template is
+included right in this distribution, unmodified, as a community
+service, in the file "units_t.h".  You may even wish to use his
+implementation, instead of mine!
+
+    Therefore, all parts of this UNITS framework package, except the
+"units_t.h" file, are distributed under the GNU GENERAL PUBLIC
+LICENSE.  Christopher Retig's original "units_t.h" file is, of course,
+distributed under its original license (as stated in the file).  Its
+license also states that it may be "used for any legal purpose", and
+since the GPL is legal, I am hereby redistributing his code, as
+modified by me, under the GPL, with the "special exception" provision
+taken directly from the GNU GCC distribution which allows for the use
+of the C++ templates, macros and inline functions provided in this
+distribution within non-GPL C++ code.  Please forward any questions,
+suggestions or patches to <perry.kundert@enbridge.com>, or
+<perry@kundert.ca>.

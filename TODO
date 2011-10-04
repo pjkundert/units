@@ -1,0 +1,1202 @@
+Support more units.  Eg:
+
+                            GUNTERTABLE 1
+---------------------------------++---------------------------------
+[Pi] + 0.4971499 [E0] +11.7111495 [Ma] -26.1775275 [QeM]+11.2452214
+[2Pi]+ 0.7981799 [Eg0]+21.9875484 [Md] -26.4757878 [q0] -29.0716885
+[4Pi]+ 1.0992099 [f0] +15.8182050 [Me] -30.0405111 [Q0] -18.7952897
+[43P]+ 0.6220887 [FBH]+44.0828836 [Mh] -26.3004734 [Q02]-37.5905794
+[2af]+16.6163849 [Fe] - 7.0841401 [Mm] -27.7250272 [qD0]-39.3480874
+[a0] -10.2763989 [Fg] -46.4399164 [mma]- 2.9356722 [QD0]+12.0339070
+[a02]-20.5527978 [Fge]-49.7038252 [Mn] -26.7760041 [Rc] + 7.0403543
+[a05]- 5.1381995 [Fgp]-43.1760076 [Mp] -26.7766023 [Re] -14.5500682
+[A0] -19.4535879 [g ] + 0.9915207 [Mt] -26.4992464 [Rgc]+ 0.9198347
+[aa] - 2.1368347 [G ] -10.1756008 [Nm] -26.2966413 [RK] + 4.4118352
+[aa2]- 4.2736693 [G0] - 4.1108052 [p0] -23.7005250 [Rp] -14.8789625
+[aBH]+51.7451335 [Gye]+11.2457248 [PA] -68.4837783 [Tc] -28.1770178
+[ae] -22.9563709 [Gyp]+ 8.4273598 [PC] +24.9918352 [Tp] -23.3557832
+[amu]-26.7797510 [h ] -33.1787441 [PE] + 9.2913901 [u0] -22.7317025
+[An] +23.7797510 [H0] +11.2719536 [Pf] +43.2683138 [ue] -23.0322291
+[B0] + 5.3711635 [hB] -33.9769239 [phi]+ 0.2089876 [um] -25.3477103
+[BHR]-27.1292422 [He] -17.3605390 [PK] +32.1513055 [un] -26.0149166
+[Bk] -22.8599163 [Hu] -17.6534080 [PL] -34.7914941 [up] -25.8505941
+[Bm] -23.0327325 [i0] - 2.1789047 [PM] - 7.6622513 [v0] + 6.3399860
+[c ] + 8.4768207 [Jf] +14.6844844 [PM5]- 3.8311257 [v02]+12.6799721
+[c^2]+16.9536414 [k ] -11.0528513 [Pp] + 0.8145694 [V0] -30.2071080
+[cQ] - 3.4392630 [Ke] + 9.9536414 [PPw]+52.5597039 [vT0]+ 1.4347506
+[Cw] -11.6150537 [Ke2]+19.9072828 [PRL]-33.9933142 [w0] -14.6844844
+[d ] - 5.9007901 [Ke5]+ 4.9768207 [PV]-103.7523937 [z0] + 2.5760306
+[ue]/Bm]+0.0005033  [Fe]/[Fg]+39.3557763  [Fe/Fg][Mp/Me]+42.6196851
+[Me]/[Mp]-3.2639088 ([Me]/[Mp])^.5: -1.6319544  [hB][v0]-27.6369379
+?:
+---------------------------------++---------------------------------
+  The conventions adopted here are intended to accommodate a greater
+density of information display without use of italics, subscripts,
+superscripts, multiple fonts, foreign language symbols, or graphics.
+  If half of the 52 symbols used for English might later be deemed
+ambiguous in shape, there are still many more than ([26]^3) label
+possibilities available for up to three symbols in parentheses:
+[Gye] = Gyromagnetic ratio of the electron, [4Pi] = Four times Pi,
+[qD0] = Atomic unit of electric quadrupole moment, [p] = momentum,
+[c^2] = Square of speed of light, etc.
+
+  If four letters are used to identify a unit, then with or without
+parentheses, brackets, braces, or slash marks these rules can apply
+AND be used in conjunction with established standards of expression:
+
+ 1. A capitalized first letter means a positive exponent, if the
+first letter is not capitalized then the unit has a negative power.
+ 2. Numerals in the second and third positions of the four letter
+unit label denote the numerator and denominator of the fractional
+power to which the unit is raised, and lack of a numeral in either
+internal position correlates to the presence of numeral one:
+
+Ampere : Ampr      Joule: Juul      Newton : Nwtn      Sievert: Svrt
+Coulomb: Cuul      Katal: Katl      Ohm    : Ohmm      Tesla  : Tsla
+Farad  : Frad      Lumen: Lmen      Pascal : Pscl      Volt   : Vltt
+Gray   : Gryy      Lux  : Luxx      Radian : Radn      Watt   : Waat
+Henry  : Hnry      Meter: Metr      Second : Scnd      Weber  : Webr
+Hertz  : Hrtz      Mole : Mool      Siemens: Smns      Year   : Year
+Becquerel: Bcql             Hrtz = scnd              Kilogram : Kgrm
+degrees Centigrade: Degc                       degrees Kelvin : Degk
+
+([Farad]^+1) = Frad = F1ad = F11d = Fr1d ; ([Farad]^-1) = frad
+([Meter]^2) = M21r = M2tr = MetrMetr ; ([Meter]^-.5) = me2r = m12r
+([Meter]^2) = [Volt][Second]/[Tesla] : M2tr=ScndtslaVltt
+[Volt]=[Weber]/[Second] : Vltt=scndWebr=Webr/Scnd=1/Scndwebr
+[Ampere]=[Weber]/[Henry] : Ampr=Webr/[Henry]=hnry[Weber]=hnryWebr
+[Watt]=[Volt][Ampere] : [Watt]=[Ampere]/vltt=Vltt/ampr=AmprVltt
+[Siemens]=[Coulomb]/[Weber] : Smns=Cuulwebr=[cuul^-1]/Webr
+[Hertz]/[Tesla]=[Coulomb]/[Kilogram] : Hrtztsla=1/ScndTsla=Cuulkgrm
+[Hertz] = 1/[Second] = [Siemens]/[Farad] : Hrtz=scnd=fradSmns
+[Second] = [Ohm][Farad] : Scnd=FradOhmm : S2nd=F2adO2mm
+[Second^2] = [Henry][Farad] : S2nd=FradHnry : Scnd=F12dH12y
+[Henry] = [Ohm^2][Farad] : Hnry=FradO2mm : H12y=F12dOhmm
+[Henry] = [Ohm][Second] = [Kilogram][Meter^2]/[Coulomb^2] :
+  Hnry=OhmmScnd=c2ulKgrmM2tr
+[Farad] = [Coulomb^2][Second^2]/([Meter^2][Kilogram]) :
+  Frad=C2ulkgrmm2trS2nd : F12d=Cuulk12mmetrScnd
+[Weber^2] = [Joule][Henry] = [Kilogram][Meter^2]/[Farad] :
+  W2br=HnryJuul=fradKgrmM2tr : Webr=H12yJ12l=f12dK12mMetr
+[Coulomb^2]=[Joule][Farad] : C2ul=FradJuul : Cuul=F12dJ12l
+[Kilogram]/[Henry] = [Coulomb^2]/[Meter^2] : hnryKgrm=C2ulm2tr
+[Kilogram] = [Farad][Meter^2][Tesla^2]                = FradM2trT2la
+ = [Coulomb^2][Henry]/[Meter^2]                       = C2ulHnrym2tr
+ = [Coulomb^2][Second^2]/([Meter^2][Farad])       = C2ulfradm2trS2nd
+ = [Ampere^2][Ohm][Second^3]/[Meter^2]             =A2prOhmmm2trS3nd
+ = [Coulomb][Second][Tesla]                            =CuulScndTsla
+:::::::::::::::::::::::::::::::::++:::::::::::::::::::::::::::::::::
+An asterisk on the far right of an entry below denotes the presence
+of a factor of rotation or geometry that may be improper to treat as
+merely numerical on all scales in a curved universe.
+=================================++=================================
+For a term of form: [MASS^x][LENGTH^y][TIME^z]{([Meter]/[Farad])^s}:
+          ENTRY        has dimensions:            x    y    z    s
+=================================++============ ==== ==== ==== =====
+AUN = Atomic unit of                              .    .    .    .
+[2Pi]=2 times [Pi]                                0    0    0    0*
+[2af]=[2Pi][f0] = AUN frequency            scnd   0    0   -1    0*
+[43P]=(4 times [Pi])/3                            0    0    0    0*
+[4Pi]=4 times [Pi]                                0    0    0    0*
+[a ]= Acceleration                     Metrs2nd   0    1   -2    0
+[A ]= Area                                 M2tr   0    2    0    0
+[a0]= AUN length = Bohr atom radius        Metr   0    1    0    0
+[A0]= AUN area = [4Pi]([a0]^2)             M2tr   0    2    0    0*
+[aa]= Fine structure constant                     0    0    0    0
+[aBH]=[FBH]/[PM]                       Metrs2nd   0    1   -2    0
+[aD]= Absorbed dose               Gryy=Juulkgrm   0    2   -2    0
+[ae]= [Fe]/[Me]                        Metrs2nd   0    1   -2    0
+[amu]=Atomic mass unit  = [10^-26.7797510 Kgrm]   1    0    0    0
+[An]= Avagadro constant        molecules/[Mool]   0    0    0    0
+[aR]= Absorbed dose rate               Gryyscnd   0    2   -3    0
+[b ]= Mass frequency                   Kgrmscnd   1    0   -1    0
+[B ]= Magnetic flux density       Tsla=m2trWebr  1/2 -3/2   0   1/2*
+[B0]= AUN Magnetic flux density            Tsla  1/2 -3/2   0   1/2*
+[BHR]=[G]/[c^2]                        kgrmMetr  -1    1    0    0
+[Bk]= Boltzmann constant               degkJuul   1    2   -2    0
+[Bm]= Bohr Magneton                    AmprM2tr  1/2  7/2  -2  -1/2*
+[c ]= Speed of light in vacuum         Metrscnd   0    1   -1    0
+[c^2]= [c] times [c]                   M2trs2nd   0    2   -2    0
+[C ]= Capacitance                 Frad=Cuulvltt   0    1    0   -1
+[Cm]= Compressibility = ([V]/[Pr])/[V]     pscl  -1    1    2    0
+[Cn]= Conductance                     Smns=ohmm   0    1   -1   -1
+[cQ]= Circulation quantum              M2trscnd   0    2   -1    0*
+[Ct]= Conductivity                     metrSmns   0    0   -1   -1
+[Cw]= Compton wavelength                   Metr   0    1    0    0
+[d ]= Permeability                     Hnrymetr   0   -2    2    1*
+[D ]= Mass density                     Kgrmm3tr   1   -3    0    0
+[De]= Dose equivalent             Svrt=Juulkgrm   0    2   -2    0
+[e ]= Energy, work, heat          Juul=MetrNwtn   1    2   -2    0
+[E ]= Electric field strength          metrVltt  1/2 -1/2  -1   1/2
+[E0]= AUN electric field strength      metrVltt  1/2 -1/2  -1   1/2
+[eD]= Energy density                   Juulm3tr   1   -1   -2    0
+[Ed]= Electric flux density            Cuulm2tr  1/2 -1/2  -1  -1/2
+[Ef]= Electric flux                        Cuul  1/2  3/2  -1  -1/2
+[Eg]= Electric field gradient          m2trVltt  1/2 -3/2  -1   1/2
+[Eg0]=AUN electric field gradient      m2trVltt  1/2 -3/2  -1   1/2
+[Ep]= Electric polarization            metrVltt  1/2 -1/2  -1   1/2
+[eS]= Specific energy                  Juulkgrm   0    2   -2    0
+[eV]= Electron-volt     = [10^-18.7952897 Juul]   1    2   -2    0
+[Ex]= Radiation exposure               Cuulkgrm -1/2  3/2  -1  -1/2
+[f ]= Frequency                       Hrtz=scnd   0    0   -1    0
+[F ]= Force                                Nwtn   1    1   -2    0
+[f0]= Bohr electron orbital frequency      Hrtz   0    0   -1    0
+[FBH]=[c^4]/[G]                            Nwtn   1    1   -2    0
+[Fe]= [Ke]([Q0]^2)/([a0]^2)                Nwtn   1    1   -2    0
+[Fg]= [G][Me][Mp]/([a0]^2)                 Nwtn   1    1   -2    0
+[Fge]=[G]([Me]^2)/([a0]^2)                 Nwtn   1    1   -2    0
+[Fgp]=[G]([Mp]^2)/([a0]^2)                 Nwtn   1    1   -2    0
+[g ]= Earth acceleration of gravity    kgrmNwtn   0    1   -2    0
+[G ]= Gravitational constant       k2rmM2trNwtn  -1    3   -2    0
+[G0]= Conductance quantum             Smns=ohmm   0    1   -1   -1
+[Gev]= [10^9 eV]         = [10^-9.7952897 Juul]   1    2   -2    0
+[Gy]= Gyromagnetic ratio           AmprkgrmScnd -1/2  3/2  -1  -1/2*
+[Gye]=Gyromagnetic ratio of electron   Cuulkgrm -1/2  3/2  -1  -1/2*
+[Gyn]=Gyromagnetic ratio of neutron    Cuulkgrm -1/2  3/2  -1  -1/2*
+[Gyp]=Gyromagnetic ratio of proton     scndtsla -1/2  3/2  -1  -1/2*
+[h ]= Planck constant                  JuulScnd   1    2   -1    0
+[H ]= Magnetic field strength          Amprmetr  1/2  1/2  -2  -1/2*
+[H0]= AUN magnetic field strength      Amprmetr  1/2  1/2  -2  -1/2*
+[hB]= AUN action = [h]/[2Pi]           JuulScnd   1    2   -1    0
+[He]= AUN energy                           Juul   1    2   -2    0
+[Hu]= Hubble constant                      Hrtz   0    0   -1    0
+[i ]= Current                     Ampr=Cuulscnd  1/2  3/2  -2  -1/2
+[I ]= Inductance                  Hnry=amprWebr   0   -1    2    1*
+[i0]= AUN current                          Ampr  1/2  3/2  -2  -1/2
+[Im]= Impulse                      KgrmMetrscnd   1    1   -1    0
+[Ir]= Irradiance                       m2trWaat   1    0   -3    0
+[j ]= Current density                  Amprm2tr  1/2 -1/2  -2  -1/2
+[Jf]= Josephson constant          Hrtzvltt=webr -1/2 -1/2   0  -1/2*
+[k ]= Permittivity                     Fradmetr   0    0    0   -1*
+[Ke]= 1/(4[Pi][k])                     fradMetr   0    0    0    1*
+[Kev]= [10^3 eV]        = [10^-15.7952897 Juul]   1    2   -2    0
+[Kv]= Kinematic viscosity              M2trscnd   0    2   -1    0
+[L ]= Length                               Metr   0    1    0    0
+[Lcn]=Loschmidt constant                   m3tr   0   -3    0    0
+[m ]= Magnetization                    Amprmetr  1/2  1/2  -2  -1/2*
+[M ]= Mass                                 Kgrm   1    0    0    0
+[Ma]= Mass of alpha particle               Kgrm   1    0    0    0
+[Md]= Mass of deuteron                     Kgrm   1    0    0    0
+[Me]= AUN mass = Mass of electron          Kgrm   1    0    0    0
+[Mev]= [10^6 eV]        = [10^-12.7952897 Juul]   1    2   -2    0
+[Mh]= Mass of helion                       Kgrm   1    0    0    0
+[mI]= Moment of inertia                KgrmM2tr   1    2    0    0
+[Mm]= Mass of muon                         Kgrm   1    0    0    0
+[mma]=Electron magnetic moment anomaly            0    0    0    0
+[Mn]= Mass of neutron                      Kgrm   1    0    0    0
+[Mp]= Mass of proton                       Kgrm   1    0    0    0
+[Mt]= Mass of tau particle                 Kgrm   1    0    0    0
+[N ]= Wave number                          metr   0   -1    0    0
+[Nm]= Nuclear magneton                 Juultsla  1/2  7/2  -2  -1/2*
+[O ]= Origin                                      0    0    0    0
+[p ]= Momentum                     KgrmMetrscnd   1    1   -1    0
+[p0]= AUN Momentum                 KgrmMetrscnd   1    1   -1    0
+[PA]= [4Pi]([PL]^2)                        M2tr   0    2    0    0*
+[PC]= Planck current                       Ampr  1/2  3/2  -2  -1/2
+[PE]= Planck energy                        Juul   1    2   -2    0
+[Pf]= Planck frequency                     scnd   0    0   -1    0
+[phi]=Natural proportion constant                 0    0    0    0
+[Pi]= Circle circumference to diameter ratio      0    0    0    0*
+[PL]= Planck length                        Metr   0    1    0    0
+[PK]= Planck temperature                   Degk   0    0    0    0
+[PM]= Planck mass                          Kgrm   1    0    0    0
+[Pp]= Planck momentum              KgrmMetrscnd   1    1   -1    0
+[PPw]=Planck power                         Waat   1    2   -3    0
+[Pr]= Pressure, stress            Pscl=m2trNwtn   1   -1   -2    0
+[PRL]=[2Pi][PL]                            Metr   0    1    0    0*
+[PT]= Planck time                          Scnd   0    0    1    0
+[PV]= ([4Pi]/3)([PL]^3)                    M3tr   0    3    0    0*
+[Pw]= Power                       Waat=Juulscnd   1    2   -3    0
+[Pw0]=AUN power                   Waat=Juulscnd   1    2   -3    0
+[q ]= Electric dipole moment           CuulMetr  1/2  5/2  -1  -1/2
+[Q ]= Charge                      Cuul=AmprScnd  1/2  3/2  -1  -1/2
+[q0]= AUN electric dipole moment       CuulMetr  1/2  5/2  -1  -1/2
+[Q0]= AUN charge = Electron charge         Cuul  1/2  3/2  -1  -1/2
+[qD]= Electric quadrapole moment       CuulM2tr  1/2  7/2  -1  -1/2
+[QD]= Charge density                   Cuulm3tr  1/2 -3/2  -1  -1/2
+[QD0]=AUN charge density               Cuulm3tr  1/2 -3/2  -1  -1/2
+[qD0]=AUN electric quadrapole moment   CuulM2tr  1/2  7/2  -1  -1/2
+[Q/M]=Specfic Charge                   Cuulkgrm -1/2  3/2  -1  -1/2
+[QeM]=[Q0]/[Me]                        Cuulkgrm -1/2  3/2  -1  -1/2
+[r ]= Resistivity                      MetrOhmm   0    0    1    1
+[R ]= Resistance                  Ohmm=amprVltt   0   -1    1    1
+[Ra]= Radionuclide activity           Bqrl=scnd   0    0   -1    0
+[Rc]= Rydberg constant                     metr   0   -1    0    0
+[Re]= Classical electron radius            Metr   0    1    0    0
+[Rgc]=Molar gas constant           degkJuulmool   1    2   -2    0
+[RK]= von Klitzing constant                Ohmm   0   -1    1    1
+[Rp]= Proton Compton wavelength            Metr   0    1    0    0
+[S ]= Poynting vector                  m2trWaat   1    0   -3    0
+[St]= Surface tension                  Juulm2tr   1    0   -2    0
+[T ]= Time                                 Scnd   0    0    1    0
+[Tc]= Thompson cross section               M2tr   0    2    0    0*
+[Tev]= [10^12 eV]       = [10^-18.7952897 Juul]   1    2   -2    0
+[Tp]= Proton characteristic time           Scnd   0    0    1    0
+[Tr]= Torque                           MetrNwtn   1    2   -2    0*
+[u ]= Magnetic dipole moment           AmprM2tr  1/2  7/2  -2  -1/2*
+[u0]= AUN magnetic dipole moment       AmprM2tr  1/2  7/2  -2  -1/2*
+[ud]= Deuteron magnetic moment         AmprM2tr  1/2  7/2  -2  -1/2*
+[ue]= Electron magnetic moment         AmprM2tr  1/2  7/2  -2  -1/2*
+[um]= Muon magnetic moment             AmprM2tr  1/2  7/2  -2  -1/2*
+[un]= Neutron magnetic moment          AmprM2tr  1/2  7/2  -2  -1/2*
+[up]= Proton magnetic moment           AmprM2tr  1/2  7/2  -2  -1/2*
+[v ]= Velocity                         Metrscnd   0    1   -1    0
+[V ]= Volume                               M3tr   0    3    0    0
+[v0]= AUN velocity                     Metrscnd   0    1   -1    0
+[V0]= ([4Pi]/3)([a0]^3)                    M3tr   0    3    0    0*
+[Vi]= Dynamic viscosity            m2trNwtnScnd   1   -1   -1    0
+[Vmi]=Ideal gas molar volume           M3trmool   0    3    0    0*
+[vT]= Voltage                     Vltt=Cuulfrad  1/2  1/2  -1   1/2
+[vT0]=AUN voltage                 Vltt=amprWaat  1/2  1/2  -1   1/2
+[V]/[M]=Specific volume                kgrmM3tr  -1    3    0    0*
+[w ]= Magnetic flux               Webr=ScndVltt  1/2  1/2   0   1/2*
+[w0]= Magnetic flux quantum                Webr  1/2  1/2   0   1/2*
+[Y ]= Angular momentum             KgrmM2trscnd   1    2   -1    0*
+[z ]= Impedance                            Ohmm   0   -1    1    1
+[z0]= Intrinsic impedance of vacuum        Ohmm   0   -1    1    1
+=================================++=================================
+Numbers in parentheses on the left margin below refer to locations
+in the map of the <a href="http://www.outlawmapofphysics.com/GJN165A.HTM">Validation Table:</a> fundamental constants structure
+a body of evidence validating the usefulness of the GDA techniques.
+=================================++=================================
+POWER OF TEN | COMMENTS, NOTES                                 UNITS
+=================================++=================================
++  0.0005033  [ue]/[Bm] = [Gye]/([QeM]) = [Electron g-factor]/2
++  0.0005982  [Mn]/[Mp]
+-  0.0006017  [4Pi][aa]/{[Hu][2af]}
+-  0.0006577  [2Pi][mma]/[aa]
+-  0.0011413  [G]/{[d]([aa]^2)}                     hnrykgrmM4trs2nd
+-  0.0017157  [B0]([aa]^2])/[4Pi]                               Tsla
++  0.0054486  ([He]/[Q0])/{([V0]([f0]^2)}               m3trs2ndVltt
+-  0.0056312  ([PM][c])^4/([Mp]/[Me])                   K4rmM4trs4nd
+-  0.0058435  [2Pi][Q0][Ke]/([aa][d])  CuulM2trs2nd=CuulfradhnryM2tr
+     = [hB][c]/{[d][Q0]/[2Pi]}                      cuulhnryJuulM2tr
++  0.0163885  [Pp]/[2Pi]                                KgrmMetrscnd
++  0.0484550  [phi]-.5= .5([5]^[.5]) = [Golden section] - [1/2]
++  0.0615851  ([4Pi]^2)[aa]
+-  0.0763615  [Bm][Fe]/[Me]                         JuulkgrmNwtntsla
+-  0.1109797  ([G]^.5)([Ke]^.5)                     CuulfradkgrmMetr
++  0.1249387  [4/3]
++  0.1545554  [Ke][PM][aa]                              fradKgrmMetr
+-  0.1643225  [un]/[up]
++  0.1665969  [Me]/[V0] = [Me]/{([4/3][Pi])([a0]^3)}        Kgrmm3tr
+-  0.1728162  [Bm]/[Bk]                                     Degktsla
+-  0.1743924  [Me][Pi]/([w0]^2)                             Kgrmw2br
+-  0.1849382  [10^7][He]/[G]=[10^7][Me]([aa]^2)/([PL]/[PM]) hnryK2rm
++  0.1923701  [k][QeM]                              CuulFradkgrmmetr
+-  0.2032353  ([Cw][Q0])/[V0]                               Cuulm2tr
++  0.2089876  [phi] = ([phi]^2) - 1  = .5 + .5([5]^.5)
+     Golden section     : Sacred cut   : Natural proportion constant
+-  0.2219594  [G][Ke]                  fradkgrmM4trs2nd=k2rmM2trV2tt
++  0.2485749  [Pi]^.5
+-  0.2767577  [Mn]/[Mt]
+-  0.2773562  [Mp]/[Mt]
++  0.2881622  [Pi]/[phi]
+-  0.3008144  [Mp]/[Md]
++  0.3010300  2.0
+-  0.3015333  2([ue]/[Bm]) = Electron g-factor
+-  0.3227575  [Ke][a0]                                      fradM2tr
+-  0.3288942  [Rp]/[Re]
+-  0.3485218  [ud]/[un]
++  0.3943428  [B0]/([Ke]^.5) = [hB]/{[Q0]([a0]^2)([Ke]^.5)}
+     = [AUN magnetic flux density]/([Ke]^.5)    cuulF12dKgrmm12rscnd
+(21) = ([Me]^.5)([a0]^-1.5)                    K12mm32r=F12dm12rTsla
++  0.3990899  [2Pi]^.5
+-  0.4146034  [Fg][f0]/[V0]                             m3trNwtnscnd
++  0.4179753  ([phi]^2) = [phi] + 1
++  0.4391959  [E0]/[H0] = [He][a0][d]/[hB] = [v0][d]            Ohmm
++  0.4771213  3.0
+-  0.4773136  [PL]/{[Me]([aa]^2)}                           kgrmMetr
++  0.4971499  [Pi] = 1/{[Jf][B0]([a0]^2)}
++  0.5028838  [um]/[up]
+-  0.5076951  [hB][v0][PM]/[PL]                             JuulKgrm
+-  0.5128443  [ud]/[up]
++  0.5496049  [4Pi]^.5
+-  0.5990748  [Mp]/[Ma]
++  0.6003442  [d][Q0][f0]/([2Pi][a0])          CuulHnrym2trscnd=Tsla
++  0.6020600  4.0
++  0.6220886  [4/3][Pi]
++  0.6582982  [Q0]/[A0]                                     Cuulm2tr
+-  0.6715423  [Me]/([w0]^2)                                 Kgrmw2br
++  0.6989700  5.0
++  0.7061375  [Pi][phi]
+-  0.7441541  [Pw0] = [4Pi][Rc][hB][c][2af] = [He][2af]         Waat
+(28) = [Me]([a0]^2)([2af]^3)                             = AUN power
++  0.7470772  Proton g-factor
++  0.7781513  6.0
++  0.7886856  ([B0]^2)/[Ke] = {([Me][2af]/[Q0])^2}/[Ke] FradmetrT2la
+(33) = [Me]([a0]^-3) =([AUN magnetic flux density]^2)/[Ke]  Kgrmm3tr
++  0.7981799  2[Pi]
++  0.8145694  [Pp] = [hB]/[PL] = Planck momentum        KgrmMetrscnd
++  0.8450980  7.0
++  0.8783918  ([E0]^2)/([H0]^2)={([He][a0][d])/[hB]}^2          O2mm
++  0.9030900  8.0
++  0.9198347  [Rgc] = Molar gas constant                degkJuulmool
+-  0.9221724  [An][h][c]=[Molar Planck constant][c]     JuulMetrmool
+-  0.9484248  [Mm]/[Mp]
++  0.9490231  [Mn]/[Mm]
++  0.9542425  9.0
++  0.9611336  [Fg]([a0]^2)/([hB]^2)                         kgrmmetr
++  0.9915207  [g] = Earth acceleration of gravity           Metrs2nd
++  0.9942997  [Pi]^2
++  1.0071675  2[Pi][phi]
+-  1.0097606  ([aa]^2)/([Me]/[Mp])
+-  1.0370231  [Hu][2af]                                         S2nd
+-  1.0376248  [4Pi][aa] =([Q0]^2)[d]/([PM][PL]) ={[Q0]/([PC][PT]}^2
+-  1.0684173  [aa]^.5
++  1.0992099  [4Pi]
+-  1.1270741  [Me]/([Mp][aa])
+-  1.2257809  [Mm]/[Mt]
+-  1.3386548  2[Pi][aa]
++  1.4002399  8[Pi]
++  1.4347506  [vT0] = ([Q0][Ke])/[a0]          Vltt=f12dK12mMetrscnd
+     = [He]/[Q0] = ([Fe]^.5)([Ke]^.5)          cuulJuul=f12dM12rN12n
+(13) =([Me]^.5)([a0]^.5)[2af]([Ke]^.5)      = AUN electric potential
++  1.4631985  ([Me]^2)[c^3]/([hB][aa])                          Nwtn
+-  1.5423340  [He][f0]                                          Waat
++  1.5473387  [Ke]/{([aa]^2)([v0]^2)}          fradmetrS2nd=Hnrymetr
+     = ([c^2][Ke])/([v0]^4) = Hnry/{[10^7]([aa]^4)Metr}
+-  1.5878004  ([G][10^7])^.5 = ([G][4Pi]/[d])^.5    h12yk12mM2trscnd
+-  1.5947179  [Nm]/([h][c])                                 metrtsla
++  1.5963597  4([Pi]^2)
+-  1.6271208  1/{([v0]^2)[k]}=[d]/([aa]^2)     fradmetrS2nd=Hnrymetr
++  1.6291388  [Pp]^2 = [Planck momentum]^2              K2rmM2trs2nd
++  1.6319544  ([Mp]/[Me])^.5
+-  1.6494807  [Vmi] = Ideal gas molar volume                M3trmool
++  1.6691909  [Bm]/([h][c])                                 metrtsla
+-  1.6987801  [G][c]                                    kgrmM4trs3nd
+-  1.7651969  ([Fe]/[Fg])/([Q0]^2)                              c2ul
++  1.8023612  [4Pi]([aa]^2)([Ke]^.5)                        M12rf12d
+-  1.8352030  [Hu][f0]                                          H2tz
+-  1.8358047  2[aa]
+-  1.8420072  ([h][c])/[Bk]=second radiation constant       MetrDegk
+-  1.8561472  [B0][4Pi]([aa]^2)/([d][Ke])
++  1.9160166  [aa][d][Ke]                                   fradHnry
++  1.9281508  [v0]/[RK]                    Metrohmmscnd=FradMetrs2nd
+-  1.9739706  2/([RK][aa])                             ohmm=Fradscnd
+-  2.0528513  [k][10^9]                                     Fradmetr
++  2.0534524  [36][Pi]
+=================================++=================================
+-  2.1368347  [aa] = [v0]/[c] = [z0]/2[RK] = Fine structure constant
+     = ([Q0]^2)[Ke]/([hB][c]) = [4Pi][a0][Rc] = [PM][PL]/([Me][a0])
+     = [G]([PM]^2)/([Me][a0][c^2]) = ([Pi]^2)[Ke][PM][PL]/{[w0]^2}
+     = {{[Q0]/([PC][PT])}^2}/[4Pi] = [Fe]([Me][Mp])/{[Fg]([PM]^2)}
+     = (2[Cw][Rc])^.5 = 1/(2[k][c][RK]) = [2Pi][Re][Me]/([Rp][Mp])
+     = [z0][Q0]/(4[w0]) = {[PM][2af]/([Me][Pf])}^.5 = [Jf][z0][Q0]/4
+    = {([Q0]^2)[d]/([4Pi][Me][a0])}^.5 = ([Q0]^2)[d]/([4Pi][PM][PL])
+    = [z0]([Q0]^2)/2[h] = [z0][v0]/[4Pi][Ke] = [v0][c][PL]/([G][PM])
+   = [Ke]([Q0]^2)/([G][PM]^2) = [Me][Re]/([PM][PL]) = ([Re]/[a0])^.5
+  = [Fe]([a0]^2)/([FBH]([PL]^2)) = [2Pi][Re]/[Cw] = [Cw]/([2Pi][a0])
+=================================++=================================
+-  2.1789047  [i0] = [Q0][He]/[hB]                              Ampr
+     = [PM][2af]([G][aa])^.5)/([Ke]^.5)             F12dK12mMetrs2nd
+(12) = {([Me]^.5)([a0]^1.5)([2af]^2)/([Ke]^.5)         = AUN current
++  2.1984197  [4Pi]^2
++  2.3149779  [Bm]/[um]
++  2.3154812  [ue]/[um]
+-  2.3154839  [Me]/[Mm]
+-  2.3570328  [Fg][FBH]                                         N2tn
++  2.4035731  ([a0]^3}([2af]^2) = [Re][c^2]                 M3trs2nd
+     = [G]([PM]^2)[aa]/[Me]
+-  2.4378648  [aa]/2
+-  2.5379363  Wien displacement law constant                DegkMetr
++  2.5760306  [z0] = [d][c] = 2[aa][h]/([Q0]^2)        Ohmm=Hnryscnd
+     = ([d]/[k])^.5  = 2[RK][aa] = 4[aa]/[G0]               f12dH12y
+     = 4[w0][aa]/[Q0] = 4[aa]/([Jf][Q0])           cuulWebr=amprVltt
+     = ([v0]^-1)[4Pi][aa][Ke]                  fradScnd=c2ulJuulScnd
+(35) = ([a0]^-1)([2af]^-1)[4Pi][aa][Ke]        = impedance of vacuum
++  2.6448328  [B0][d]/{[4Pi]([aa]^2)}                   HnrymetrTsla
++  2.6679049  ([PM]^2)[c^2][aa]/([G][10^7])             HnryK3rmm2tr
+-  2.7194945  Tau molar mass                                Kgrmmool
+-  2.7263307  [d]/{[4Pi]([aa]^2)} = [Ke]/([v0]^2)       fradmetrS2nd
+     = 1/{[10^7]([aa]^2)} = 1/{[c^2]([aa]^2)([4Pi][k])}     Hnrymetr
+(26) = ([a0]^-2)([2af]^-2)[Ke]     = AUN permeability       a2prNwtn
++  2.7979159  [i0]([Ke]^.5)                             Amprf12dM12r
+     = ([Q0][He]/[hB])([Ke]^.5)                         K12mM32rs2nd
+(12) =([Me]^.5)([a0]^1.5)([2af]^2)          = [AUN current]([Ke]^.5)
+-  2.7990853  ([Q0]^2)/[PL]                                 C2ulmetr
+-  2.8104708  [Me][c^2]/[a0]                                Juulmetr
+-  2.8178616  [up]/[Bm]
++  2.8183649  [ue]/[up]
++  2.8183761  [ue]/[shielded proton magnetic moment]
+-  2.9333327  Muon magnetic moment anomaly
++  2.9350145  [2Pi]/[aa] = ([Rp][Mp])/([Me][Re])
+-  2.9356722  [mma] = ([ue]/[Bm]) - 1
+-  2.9503951  [d]^.5                               amprN12n=H12ym12r
++  2.9536414  ([Ke]^2)/[c^2] = ([Ke]^2)([aa]^2)/([v0]^2)    fradHnry
+     = [Ke][d]/[4Pi] = [d]/([4Pi]^2}[k]) = [10^-7][Ke]      f2adS2nd
++  2.9826875  [ue]/[un]
+-  3.1382330  2[cQ] = [h]/[Me]                              M2trscnd
+-  3.1744595  [4Pi]([aa]^2) =[d]([v0]^2)/[Ke]=([Q0]^2)[d]/([a0][Me])
+-  3.1756008  [G][10^7] = [G][4Pi]/[d]              hnrykgrmM4trs2nd
+-  3.1922587  ([a0]^3)/{([Q0]^2)[Ke]}                   c2ulFradM2tr
+     = 1/{[Me]([2af]^2)}                                    kgrmS2nd
++  3.2343288  [Ke][Q0]/{[c]([a0]^2)}           Cuulfradm2trScnd=Tsla
+-  3.2360445  [aa]/[4Pi]
++  3.2582736  ([PM][PL][Pf])^4                          K4rmM4trs4nd
+-  3.2639088  [Me]/[Mp]
++  3.2644121  [ue]/[Nm]
+-  3.2645070  [Me]/[Mn]
+-  3.3312093  [ud]/[ue]
+-  3.3906000  [k]/[PM]                                  Fradkgrmmetr
++  3.4305057  [Mp]/[V0]                                     Kgrmm3tr
+-  3.4367250  [Nm]/[Bk]                                     Degktsla
+-  3.4392630  [cQ] = [h]/(2[Me])= [A0][2af]/4               M2trscnd
+(27) = ([a0]^2)[2af][Pi]                    = Quantum of circulation
++  3.5295152  [He][2af]/([aa]^2) = [Pw0]/([aa]^2)               Waat
+-  3.5412646  [Me]/[Mt]
+-  3.5420701 [vT0]/([Ke]^.5)=([Fe]^.5) cuulF12dJuulm12r=F12dm12rVltt
+     = [He]/{[Q0]([Ke]^.5)} = [Q0]([Ke]^.5)/[a0]   N12n=K12mM12rscnd
+(13) = ([Me]^.5)([a0]^.5)[2af]  = [AUN electric potential]/([Ke]^.5)
+-  3.5647232  [Me]/[deuteron mass]
++  3.5928030  ([Re]/[Me])/([Rp]/[Mp])
++  3.6000332  ([Me]^2)[c^3]/{[hB]([aa]^2)}                      Nwtn
+     = [Me][c^2]/([Re][aa]) = [G]/([Gresky's mu sub b]^2)
+-  3.6353828  [h]/([Pi][Me]) = [4Pi]([a0]^2)[f0]            M2trscnd
+-  3.8202314  [Fe]/([Me]/[Mp])                                  Nwtn
+-  3.8311257  [PM]^[.5]                                         K12m
+-  3.8629836  [Me]/[Ma]
+-  3.9364128  [cQ]/[Pi] = ([a0]^2)[2af] = [a0][v0]          M2trscnd
+     = [A0][2af]/[4Pi] =[aa]{([A0]/[d])^.5}([Ke]^.5)
+(27) = ([a0]^2)([2Pi][f0])           = [Quantum of circulation]/[Pi]
+-  3.9452762  Muon molar mass                               Kgrmmool
+-  4.0528513  1/([Ke][d]) = [4Pi][k]/[d]                    Fradhnry
+-  4.1108052  [G0] = Conductance quantum = 2([Q0]^2)/[h]        Smns
+     = 4[aa]/([d][c]) = 2/[RK] = [Jf][Q0] = [Q0]/[w0] = 4[aa]/[z0]
+(5)  = [a0][2af]/{[Pi][Ke]}              = [AUN velocity]/([Pi][Ke])
+-  4.2469372  [p0]/[A0]                                 Kgrmmetrscnd
+-  4.2611053  [d]/([aa][Pi])                       a2prNwtn=Hnrymetr
+-  4.2736693  [aa]^2 = ([v0]^2)[d][k] = [PL][He]/([G][Me][PM])
+     = [He][Pi]/([a0][H0][4Pi][w0])= ([Q0]^2)[d]/{[a0][4Pi][Me]}
+     = [v0][E0]/{[Ke][H0][4Pi]} = [k][v0][E0]/[H0] = 2[Cw][Rc]
+     = ([Q0]^2)[d][2af]([v0]^2)[2Pi]/{[a0][4Pi]([i0]^2)[RK]}
+     = [He][d]/{{[B0]^2}([a0]^3)[4Pi]}
++  4.3352544  ([4Pi]^2)/[aa]
++  4.4118183  [Q0][d]/([V0][4Pi])                       CuulHnrym4tr
++  4.4118183  [Q0]/([V0][10^7])                             Cuulm3tr
+(15)?                        = [AUN charge density]{3/([4Pi][10^7])}
++  4.4118352  [RK] = [h]/([Q0]^2) = [z0]/(2[aa]) = 2/[G0]       Ohmm
+     = Hall resistance = ([v0]^-1)[2Pi][Ke]    fradScnd=c2ulJuulScnd
+     = ([d]/[k])^.5)/(2[aa]) = [d][c]/(2[aa])      f12dH12y=Hnryscnd
+     = 2[w0]/[Q0] = 2/([Jf][Q0])                   cuulWebr=amprVltt
+(35) = ([a0]^-1)([2af]^-1)[2Pi][Ke]          = von Klitzing constant
+-  4.7128653  [Q0]/(4[w0]) = [v0][k]               Fradscnd=Cuulwebr
+-  4.7708192  ([aa]^2)/[Pi]
++  4.8631653 ([Q0]^2)/([PL][PM])=[aa][4Pi]/[d] C2ulkgrmmetr=hnryMetr
+-  4.9052354  [hB]/([Q0][a0]) = [B0][a0]           metrWebr=MetrTsla
+-  4.9473055  [Fe]/[aa] = [G]([PM]^2)/([a0]^2)                  Nwtn
+-  4.9763173  ([ue]/[Bm])/([Ke]^.5)                         F12dm12r
++  4.9768207  [Ke]^.5 = [c]([10]^3.5)                       f12dM12r
++  4.9844613  [An][Q0] = Faraday constant                   Cuulmool
++  5.0057166  Standard atmosphere                      Pscl=m2trNwtn
+-  5.0878004  [G]^.5                                    k12mM32rscnd
+-  5.1381994  [a0]^.5                                           M12r
++  5.1520611  [z0]^2 = [d^2][c^2] = [d]/[k]    ?5D?    O2mm=fradHnry
+-  5.2483355  [Fe]/(2[aa])                                      Nwtn
++  5.3711635  [B0] = [hB]/{[Q0]([a0]^2)} = AUN magnetic flux density
+(21) = ([Me]^.5)([a0]^-1.5){[Ke]^.5)  f12dK12mmetr=cuulKgrmscnd=Tsla
+-  5.3728792  ([aa]^2)/[4Pi]
+-  5.4007435  [Me][aa]/[Mp]
++  5.4739706  [Pi]([Ke]^.5)                                 f12dM12r
+-  5.5254166  [PM]/[aa]                                         Kgrm
++  5.6799721  [Ke]([aa]^2)                                  fradMetr
++  5.8706868  ([2Pi]/[aa])/[mma]
+-  5.9007901  [d] = 1/([c^2][k])                   a2prNwtn=Hnrymetr
+     = [4Pi]([aa]^2)[Ke]/([v0]^2)                       fradmetrS2nd
+(26) = ([a0]^-2)([2af]^-2)[4Pi]([aa]^2)[Ke]      = Magnetic constant
+-  6.0732475  [hB][aa]/[Me] = [c][Re]          JuulkgrmScnd=M2trscnd
++  6.0760306  [4Pi]([Ke]^.5)                                f12dM12r
+-  6.2476399  2[aa]/[RK] = [aa][G0]                             Smns
+-  6.2607601  [An][Me]                         (molecules)(Kgrmmool)
+-  6.3399860  1/[v0] =[RK]/([2Pi][Ke])         metrScnd=FradmetrOhmm
+     = [z0]/([4Pi][aa][Ke]) = 1/([Pi][G0][Ke])      cuulFradmetrWebr
+     = {([d]/[k])^.5}/([4Pi][aa][Ke]) = [d][c]/([4Pi][aa][Ke])
+     = [w0]/([Pi][Q0][Ke]) = 1/([Pi][Jf][Q0][Ke])   amprFradmetrVltt
+     = [hB]/{([Q0]^2)[Ke]}         c2ulFradJuulmetrScnd=F12dH12ymetr
+(35) = ([a0]^-1)([2af]^-1)     = [von Klitzing constant]/([2Pi][Ke])
++  6.3399860  [v0] = [a0][He]/[hB] = ([Q0]^2)[Ke]/[hB]      Metrscnd
+     = [Ke][2Pi]/[RK] = [G0][Ke][Pi]   CuulfradMetrwebr=fradMetrSmns
+(5)  = [a0][2af] = [a0](2[Pi][f0]) = [Jf][Q0][Ke][Pi] = AUN velocity
+-  6.4105040  [aa]^3 = [2af][Re]/[c]  = [Fe][Mp][2af]/([Fg][PM][Pf])
+     = ([PL]^2)[Mp][Fe]/{([a0]^2)[Me][Fg]} : B076
++  6.5065829  [p0]/[V0]                                 Kgrmm2trscnd
++  6.5278176  ([Mp]/[Me])^2
+-  6.6996243  ([Mp]/[Me][h][c][aa]/[G])^.5                      Kgrm
+     = Baggiolini's pondus : B272
++  6.7343288  [He]/{([Q0][a0])([Ke]^.5)}   F12dm32rVltt=K12mm12rscnd
+(14) = ([Me]^.5)([a0]^-.5)[2af]     = [AUN electric field]/([Ke]^.5)
++  6.7791819  [4Pi][Ke]([aa]^2) = ([v0]^2)[d]               fradMetr
++  6.8821028  [Nm]/[h]                                      scndtsla
+ - 6.8878170   {[G][hB]([aa]^2)/{([Me]^2)[c^3]}}^.5         kgrmMetr
+     = {[G][Re][aa]/([Me][c^2])}^.5 = [Gresky's mu sub b] : B138
+-  6.9116920  [G]/([Me]/[Mp])                           kgrmM3trs2nd
++  7.0000000  [4Pi]/[d]=[c^2]/[Ke]=[c^2]([4Pi][k])          hnryMetr
+-  7.0058435  [hB][c]/(2[Q0]) : Dirac's magnetic charge : B193  Cuul
++  7.0403543  [Rc] = [Me][c]([aa]^2)/(2[h]) = [aa]/([4Pi][a0])  metr
+     = Rydberg constant = [Me]([Q0]^4)/(8[k^2][h^3][c]) : B028 p 537
+-  7.0841401  [Fe] = [He]/[a0] = {([Q0]/[a0])^2}[Ke]            Nwtn
+     = ([H0][4Pi]([aa]^2])([w0]/[Pi])  fradhnryKgrmMetr=C2ulfradmetr
+(8)  = [Me][a0]([2af]^2)                                 = AUN force
+-  7.2463863  ([Pi]^2)([Bk]^4)/{(60([hB]^3)[c]}         d4gKm2trWaat
+     = Stefan Boltzmann constant
+-  7.3834713  ([Q0]^2)/[V0]                                 C2ulm3tr
++  7.4988066  =  31536000                                   Scndyeer
++  7.5110019  [Shielded helion gyromagnetic ratio]/[2Pi]    Hrtztsla
+-  7.5375781  ([aa]^2)/({Mp]/[Me])
+-  7.5500682  ([Q0]^2)/[Me]                                 C2ulkgrm
+-  7.6622513  [PM] = Planck Mass = ([hB][c]/[G])^.5             Kgrm
+     = {([Q0]^2)[Ke]/([G][aa])}^.5 = [Me]([a0][aa]/[PL])
++  7.6786408  [c]/(2[Pi])                                   Metrscnd
+-  7.7424384  [Q0]/[k]                                  CuulfradMetr
++  7.8168067  [Ke][aa]                                      fradMetr
++  7.9813126  [Q0]/[Mp]                                     Cuulkgrm
++  8.0974942  [H0][4Pi]([aa]^2) = [B0]([aa]^2)/([d][k][Ke]  Amprmetr
+     = [4Pi]([aa]^2)([B0]/[d])         FradMetrTslas2nd=hnryMetrTsla
+     = [B0]([v0]^2)/[Ke] =[AUN magnetic field strength][4Pi]([aa]^2)
+(29) = ([Me]^.5)([a0]^.5)([2af]^2)/([Ke]^.5)            F12dK12ms2nd
++  8.0992099  [4Pi][10^7]    or             [4Pi][4Pi]/[d]  hnryMetr
+-  8.1395642  [a0]/[aa]                                         Metr
++  8.2630373  [Gyn] = Neutron gyromagnetic ratio            scndtsla
++  8.3091817  Shielded helion gyromagnetic ratio            scndtsla
++  8.3095492  [QeM][mma]                                    Cuulkgrm
++  8.4273487  Shielded gyromagnetic ratio of proton         scndtsla
++  8.4273598  [Gyp] = (2[up]/[hB])                          scndtsla
++  8.4508869  [Me]/{[PM]([a0]^3)}                               m3tr
++  8.4768207  [c] = [v0]/[aa] = [f0]/(2[Rc]) = [PL][Pf]     Metrscnd
+(5)  = [a0][2af]/[aa] =speed of light in vacuum =[AUN velocity]/[aa]
+-  8.5188908  [Q0]/[a0]                                     Cuulmetr
+-  8.5473387  [aa]^4
+-  8.7306687  [PM]([aa]^.5)                                     Kgrm
+-  8.8416482  [Q0][Ke] = [Q0]/([4Pi][k])                CuulfradMetr
++  8.9160166  ([Ke][4Pi][aa])^.5 = [aa]/[k]                 fradMetr
+-  8.9199448  2[Fe][aa]                                         Nwtn
+-  9.0752495  [d][4Pi]([aa]^2)                              Hnrymetr
+-  9.1368347  [aa][d]/[4Pi] = [aa]/[10^7]                   Hnrymetr
+-  9.2209748  [Fe][aa]                                          Nwtn
++  9.2913901  [PE] = [PM][c^2] = Planck energy                  Juul
+-  9.3989931  [An][h] = Molar planck constant           JuulmoolScnd
+-  9.5220048  [Fe][aa]/2                                        Nwtn
+-  9.5221465  [Md][c^2]                                         Juul
+-  9.5455897  [Mt][c^2]                                         Juul
+-  9.7792490  [a0][Pi]                                          Metr
+-  9.7990860  [PM][aa]                                          Kgrm
++  9.8104708  [Jf][Pi]/[B0]                                 Fradkgrm
+-  9.8223627  [Mn][c^2]                                         Juul
+-  9.8229609  [Mp][c^2]                                         Juul
++  9.8449816  [Bm]/(2[h])                                   scndtsla
++  9.8820561  ([a0]/[Me])^.5                                k12mM12r
++  9.9536414  [Ke] = 1/([4Pi][k]) = [c^2][d]/[4Pi]          fradMetr
+     = [v0][RK]/[2Pi] = [a0][B0]/([Me][Jf][Pi])
+(0)  = Base unit of permittivity : B120       = 1/[AUN permittivity]
+-  9.9835299  ([Q0]^2)[Ke]/[Hu]        C2ulfradMetrScnd=KgrmM3trscnd
+- 10.0646211  ([G]^.5)/([Ke]^.5)           F12dk12mMetrscnd=Cuulkgrm
++ 10.1460116  [Bm]/[h]                                      scndtsla
+- 10.1744595  [d]([aa]^2) = [4Pi]([aa]^2)/[10^7]            Hnrymetr
+- 10.1756008  [G] = [hB][c]/([PM]^2)                hnryk2rmMetrW2br
+     = ([Gye]^2)[Ke]([Fg]/[Fe])([Me]/[Mp]){([Bm]/[ue])^2}
+     = ([PL]^3)([Pf]^2)/[PM]           hnrykgrmM2tr=fradMetrs2ndt2la
+     = [Ke]([Q0]^2)/{([aa]([PM]^2)}                 A2prk2rmnwtnW2br
+     = [Ke]([i0]^2)/{([PM]^2)([2af]^2)[aa]}     Fradk2rmMetrOhmmWaat
+     = ([QeM]^2)[Ke]([Fg]/[Fe])([Me]/[Mp])      h2rykgrmM2trOhmmScnd
+     = 4[Ke]{([Bm]/[hB])^2}([Fg]/[Fe])([Me]/[Mp])   Fradk2rmMetrV2tt
+     = [Ke]{([2af]/[B0])^2}([Fg]/[Fe])([Me]/[Mp])   C2ulfradk2rmMetr
+     = [Ke]{([Eg0]^2)/([B0])^4}([Fg]/[Fe])([Me]/[Mp])   k2rmM2trNwtn
+     = [Ke][Me]{([Eg0]^2)/([B0])^4}([2af])/{[PM][Pf]([aa]^3)}
+(31) = ([Me]^-1)([a0]^3)([2af^2)([Fg]/[Fe])([Me]/[Mp])  kgrmM3trs2nd
+- 10.2763989  Bohr radius = [aa]/([4Pi][Rc])= [Cw]/([2Pi][aa])
+     = ([Pi][Jf][B0])^-.5 = [PM][PL]/([Me][aa]) = [Re]/([aa]^2)
+(2)  = [a0] = ([hB]^2)/{[Ke][Me]([Q0]^2)}    = AUN length       Metr
+- 10.3188278  [Bk]/[h]                                      degkscnd
+- 10.3480490  [Fe]/([Mp]/[Me])                                  Nwtn
++ 10.3771970  [G]/([a0]^2)                              kgrmMetrs2nd
+- 10.4613366  ([Q0]^2)[PM]/[PL]                         C2ulKgrmmetr
++ 10.7423269  [B0]^2 = {[hB]/{[Q0]([a0]^2)}}^2                  T2la
+     = ([Me][2af]/[Q0])^2                  c2ulK2rms2nd=fradKgrmm2tr
+(33) = {[Me]([a0]^-3)}[Ke]           = [AUN magnetic flux density]^2
++ 10.7518213  [2Pi][Ke]                                     fradMetr
+- 10.7713858  [Mm][c^2]                                         Juul
+- 10.8168738  [Cw][2Pi]                                         Metr
++ 10.9479412  ([Pi]^2)[Ke]                                  fradMetr
+- 10.9885905  [d]([G]^.5)                               k12mM12rOhmm
+- 11.0528513  [k]= 1/([d][c^2]) = Permittivity of vacuum    Fradmetr
+     = ([aa]^2)/{[d]([v0]^2)} = [10^7][Metr]/([4Pi][c^2][Hnry])
+     = 1/(2[v0][RK]) = 1/(2[aa][c][RK])    hnrymetrS2nd=metrohmmScnd
+     = [Q0]/(4[w0][v0])                             CuulmetrScndwebr
+(0)  = ([a0]^-2)([2af]^-2)([aa]^2)/[d]    = [AUN permittivity]/[4Pi]
+- 11.0534524  1/{(36[Pi])[10^9]}
+- 11.1330384  [Q0]/[PM]                                     Cuulkgrm
++ 11.2452214  [QeM] =[Q0]/[Me] = [Gye]/([ue]/[Bm])          Cuulkgrm
+     = (2[Bm]/[hB]) = [2af]/[B0] = [Eg0]/([B0]^2)           Hrtztsla
+     = ({[G]([Fe]/[Fg])([Mp]/[Me])}^.5)/([Ke]^.5)
+     = [Electron gyromagnetic ratio]/([ue]/[Bm])        m2trt2laVltt
+(24) = ([Me]^-.5)([a0]^1.5)[2af]/([Ke]^.5)          F12dk12mMetrscnd
++ 11.2457248  [Gye] = [QeM]([ue]/[Bm])             Cuulkgrm=Hrtztsla
+     = 2[ue]/[hB] = [2af]/[B0]([ue]/[Bm])           F12dk12mMetrscnd
+     = ({[G]([Fe]/[Fg])([Mp]/[Me])}^.5)([ue]/[Bm])/([Ke]^.5)
+     = [Eg0]/([B0]^2)([ue]/[Bm])       = Electron gyromagnetic ratio
+(24) = ([Me]^-.5)([a0]^1.5)[2af]([ue]/[Bm])/([Ke]^.5)   m2trt2laVltt
++ 11.2719536  [H0] = [B0]/[d]          hnryMetrTsla=FradMetrs2ndTsla
+    =[B0]([v0]^2)/{[4Pi][Ke]([aa]^2)}  Amprmetr=cuulhnryKgrmMetrscnd
+     = [B0]([v0]^2)[k]}/([aa]^2)       = AUN magnetic field strength
+(29) ={([Me][a0])^.5}([2af]^2)/{[4Pi]([aa]^2)([Ke]^.5)} F12dK12ms2nd
+- 11.2736693  ([aa]^2)[d]/[4Pi]                             Hnrymetr
+- 11.2872915  [Me][c]/[a0]                                  Kgrmscnd
+- 11.3578095  [Fe]([aa]^2)                                      Nwtn
++ 11.4118183  [Q0]/[V0] = [Q0]/{[4/3][Pi]([a0^3)}           Cuulm3tr
++ 11.4118353  [RK][4Pi]/[d] = [2Pi][c]/[aa]                 Metrscnd
+- 11.4933021  [PM]^1.5                                          K32m
+- 11.6150537  [Cw] = [h]/([Me][c]) = [2Pi][aa][a0] = 2[cQ]/[c]  Metr
+     = [2Pi][PL][PM]/[Me] = [2Pi]([aa]^2)/([4Pi][Rc]) : B076
++ 11.6387993  ([Me]^2)[c^3]/([G][hB][aa])                   K2rmm2tr
++ 11.7111495  [E0] =([Q0][Ke])/([a0]^2)        f12dK12mscnd=metrVltt
+(14)=([Me]^.5)([a0]^-.5)[2af]([Ke]^.5) =AUN electric field  cuulNwtn
+- 11.7952897  [Q0][10^7] = [Q0][4Pi]/[d]                CuulhnryMetr
++ 11.8976398  [Rp]/[Mp]
++ 12.0339070  [Q0]/([a0]^3)                F12dK12mm2trscnd=Cuulm3tr
+     = [B0][2af]/[Ke] = [Eg0]/[Ke]                  FradmetrscndTsla
+(15) = ([Me]^.5)([a0]^-1.5)[2af]/([Ke]^.5)      = AUN charge density
++ 12.0339239  ([4Pi]/3)([2Pi][c])/[aa]                      Metrscnd
++ 12.0904761  [Ke]/[aa]                                     fradMetr
+- 12.3124355  [G][aa]                                   kgrmM3trs2nd
++ 12.3694477  [Fe]/[A0]                                         Pscl
++ 12.3711635  [H0][4Pi]                                     Amprmetr
+- 12.4132335  [Cw]/([2Pi]) = ([aa]^2)/([4Pi][Rc])               Metr
+     = [cQ]/([Pi][c])  = [hB]/([Me][c]) = [PL]([PM]/[Me])
+- 12.4535879  [A0][4Pi]/[d]                                 hnryM3tr
++ 12.5055797  [i0][Jf]                             hnry=AmprHrtzvltt
+- 12.6799721  ([v0]^-2) = [d]/{[4Pi]([aa]^2)[Ke]}       FradHnrym2tr
+(26) = ([a0]^-2)([2af]^-2)     = [AUN velocity]^-2          m2trS2nd
++ 12.6799721  [v0]^2 =[c^2]([aa]^2) =([aa]^2)/[d][k]    C2ulfradkgrm
+    =[G][PM]([aa]^2)/[PL] =([Q0]^2)[Ke][aa]/([PM][PL])  fradhnryM2tr
+     = ([aa]^2)[10^7]Metr/([k][4Pi]Hnry)   A2prfradMetrnwtn=M2trs2nd
+(36) = ([a0]^2)([2af]^2) = ([aa]^2)[4Pi][Ke]/[d]  = [AUN velocity]^2
+- 12.7500517  {[Ke]([Q0]^2)/[aa]}^.5                    Cuulf12dM12r
+     = {[G]([PM]^2)}^.5 = ([PM]^.5)([PL]^1.5)[Pf]       K12mM32rscnd
++ 12.8465690  [He]/[V0]                                     Juulm3tr
++ 12.8886559  [Ke][2Pi]/[aa] = 1/(2[aa][k])                 fradMetr
++ 13.0027295  ([Q0]^2)/{([a0]^2)[Me])}                 C2uulkgrmm2tr
++ 13.0743148  [H0][4Pi]([aa]^2)([Ke]^.5)                Amprf12dm12r
+     = [B0]([v0]^2)/([Ke]^.5)                       FradMetrs2ndTsla
+               = [AUN magnetic field strength][4Pi]([aa]^2)([Ke]^.5)
+(29) = ([Me]^.5)([a0]^.5)([2af]^2)                      K12mM12rs2nd
+- 13.0868697  [Me][c^2] = ([Q0]^2)[Ke]/[Re] = [Fe]([a0]^2)/[Re] Juul
+     = [FBH]([PL]^2)/([aa][a0])             = Natural unit of energy
+- 13.1584550  [4Pi]{([Me][a0])^.5}/[d]                  K12mhnryM32r
+- 13.189686   [k][aa]                                       Fradmetr
++ 13.2863699  ([Ke]^.5)[QeM][mma]                       k12mM32rscnd
+- 13.3883012  [Mp]^.5                                           K12m
+- 13.4241262  [Me][2af] = [Q0][B0]                 Kgrmscnd=CuulTsla
+     = [He][Pi]/[cQ]                                    Juulm2trScnd
+- 13.4395096  [G]/([Mp]/[Me])                           kgrmM3trs2nd
++ 13.4686576  [He]/([a0]^3) = ([E0]^2)/[Ke]                 Juulm3tr
+     = ([He]^2)/([Ke]{([Q0][a0])^2}) = ([AUN electric field]^2)/[Ke]
+     = {[AUN magnetic field strength][4Pi]([aa]^2)}^2)[Ke]/([v0]^2)}
+(30) = [Me]([a0]^-1)([2af]^2) = [Ke]{{[H0][4Pi]([aa]^2)}^2/([v0]^2)}
+- 13.5527978  ([a0]^2)[4Pi]/[d]                             hnryM3tr
+- 13.5646211  ([G]/[c^2])^.5                                k12mM12r
++ 13.6813704  [f0][aa]                                          scnd
++ 13.775634   ([Me]^2)[c^3]/{[G][hB]([aa]^2)}               K2rmm2tr
+     = [Me][c^2]/([G][Re][aa]) = [Gresky's mu sub b]^-2  : B138
++ 13.7791819  [A0]([2af]^2) = [4Pi]([v0]^2)                 M2trs2nd
+- 13.8184690  [Q0]([Ke]^.5) = ([hB][v0])^.5             Cuulf12dM12r
+     = ([PM]^.5)([PL]^1.5)([Pf]^1)([aa]^.5)             K12mM32rscnd
+(11) = ([Me]^.5)([a0]^1.5)[2af]              = [AUN charge]([Ke]^.5)
+- 13.9305376  [h]/[Mm][c] = Muon Compton wavelength             Metr
+- 14.0966302  [Mp]([v0]^2)                                      Juul
+- 14.2223061  [Me][f0]                                      Kgrmscnd
+- 14.2273108  ([aa]^2)/[Ke]                                 Fradmetr
+- 14.2386963  [PL]/([a0]^2)                                     metr
++ 14.3633688  [a0][aa]/[Mp]                                 kgrmMetr
++ 14.3834544  [Q0]/[h] = 1/[Photo-electric constant]        Amprjuul
+- 14.5263227  (2[Pi])([PM]^2) = [h][c]/[G]                      K2rm
+- 14.5500682  [Re] = [a0]([aa]^2) = ([aa]^3)/([4Pi][Rc])        Metr
++ 14.5900877  [2af]([a0]^1.5)/([Mp]^.5)                 K12mM32rscnd
++ 14.6665066  [RK]/([2Pi][k])                           fradOhmmMetr
+- 14.6697080  Deuteron rms charge radius                        Metr
+- 14.6844844  [w0] = [h]/(2[Q0])                   Webr=cuulJuulScnd
+     = 1/[Jf]                                  f12dK12mMetr=ScndVltt
+(25) = ([Me]^.5)([a0]^.5)[Pi]([Ke]^.5)      =  Magnetic flux quantum
++ 14.6844844  [Jf] = 2[Q0]/[h] = [G0]/[Q0] = 2/([RK][Q0])   Hrtzvltt
+     = 4[aa]/([z0][Q0]) = [Q0]/[hB][Pi]                 F12dk12mmetr
+(34) = {([Me]^-.5)([a0]^-.5)}/{[Pi]([Ke]^.5)}   = Josephson constant
+- 14.7287174  [hB]/[Mm][c] = [Muon Compton wavelength]/[2Pi]    Metr
++ 14.8168067  [c^2][aa]                                     M2trs2nd
+- 14.8789625  [Rp] = [2Pi][a0][v0]([Me]/[Mp]) = [h]/([Mp][c])   Metr
+    = [c][Tp] =[c]{[h]/([Mp][c^2]) =Proton Compton wavelength : B036
+- 14.8795607  [h]/([Mn][c]) = Neutron Compton wavelength        Metr
++ 14.9304621  [Ke]^1.5                                      f32dM32r
+- 15.0202555  [Me]^.5                                           K12m
+- 15.0579919  Proton rms charge radius                          Metr
+- 15.1563188  [h]/([Mt][c]) = Tau Compton wavelength            Metr
+- 15.1816343  [w0]/[Pi] = [hB]/[Q0]                Webr=cuulJuulScnd
+     = 1/([Jf][Pi])                            f12dK12mMetr=ScndVltt
+(25) = ([Me]^.5)([a0]^.5)([Ke]^.5)    = [Magnetic flux quantum]/[Pi]
++ 15.1816343  [Jf][Pi] = [Q0]/[hB] = [G0][Pi]/[Q0]          Hrtzvltt
+     = [4Pi][aa]/([z0][Q0])  = [2Pi]/([RK][Q0])         F12dk12mmetr
+(34) = {([Me]^-.5)([a0]^-.5)}/([Ke]^.5)   = [Josephson constant][Pi]
+- 15.3245026  [PM]^2 = [hB][c]/[G]                              K2rm
+- 15.4145983  [a0]^1.5                                          K32m
+- 15.4269228  2([Pi][h][c^2] = First radiation constant     WaatM2tr
++ 15.4904429  [Re]/[Me] = [hB][aa]/{([Me]^2)[c]}            kgrmMetr
+     = + 15.4904421 = [PM][PL][aa]/{[Me]^2}
+     = + 15.4904435 = {[aa]^3}{[a0]^2}/{[PM][PL]}
+     = Gresky's [mu sub g]=[mech equivalent of permeability] : B137
+- 15.5165733  [Hu]/[aa]                                         scnd
++ 15.5171750  [Rc][c]                                           scnd
+- 15.6771423  [hB]/([Mp][c])                                    Metr
+- 15.6777406  [hB]/([Mn][c])                                    Metr
++ 15.8182050  [f0]=2[Rc][c]=[v0]/([2Pi][a0])=Bohr frequency     scnd
+     = [Ke]/([RK][a0]) = 1/([4Pi][k][RK][a0])               fradohmm
+- 15.9240727  2[h][c^2]                                 M2trstrrWaat
+- 15.9544971  [hB]/([Mt][c]) = [Tau Compton wavelength]/[2Pi]   Metr
++ 16.1390720  [c]/[PM]                                  kgrmMetrscnd
++ 16.1554615  [c^2]/[2Pi]                                   M2trs2nd
++ 16.2220421  [Gye]([Ke]^.5)/([ue]/[Bm])            f12dM12rscndtsla
+     = [QeM]([Ke]^.5) = (2[Bm]/[hB])([Ke]^.5) = [2af]([Ke]^.5)/[B0]
+     = {[G]([Fe]/[Fg])([Mp]/[Me])}^.5 = [Eg0]/([B0]^2)([Ke]^.5)
+              = {[Electron gyromagnetic ratio]([Ke]^.5)}/([ue]/[Bm])
+(24) = ([Me]^-.5)([a0]^1.5)[2af]       k12mM32rscnd=Cuulf12dkgrmM12r
++ 16.2225455  [Gye]([Ke]^.5) = [QeM]([Ke]^.5)([ue]/[Bm])
+     = (2[ue]/[hB])([Ke]^.5) = [2af]([Ke]^.5)([ue]/[Bm])/[B0]
+     = {{[G]([Fe]/[Fg])([Mp]/[Me])}^.5}([ue]/[Bm])
+     = ([Ke]^.5){[Eg0]/([B0]^2)}([ue]/[Bm])         Cuulf12dkgrmM12r
+     = [Electron gyromagnetic ratio]([Ke]^.5)       f12dM12rscndtsla
+(24) ([Me]^-.5)([a0]^1.5)[2af]([ue]/[Bm])               k12mM32rscnd
+- 16.2328084  [Fg]/[V0]                                     Nwtnm3tr
+- 16.3994053  [Fg]/[Me]                                     Nwtnkgrm
++ 16.5002034  [a0]/[Mp]                                     kgrmMetr
+- 16.6163849  [hB]/[He] = ([2Pi][f0])^-1                        Scnd
+     = ([RK]/[2Pi])[a0]/[Ke]                                FradOhmm
+(4)  = [2af]^-1 = ([Ke]^2)([hB]^3)/{[Me]([Q0]^4)}         = AUN time
++ 16.6163849  [He]/[hB] = [2Pi][f0]                        scnd=Hrtz
+     = [2Pi][Ke]/([RK][a0])                                 fradohmm
+(3)  = [2af] = [Me]([Q0]^4)/{([hB]^3)([Ke]^2)}       = AUN frequency
++ 16.9536414  [c^2] = ([v0]^2)/([aa]^2)        M2trs2nd=fradhnryM2tr
+     = 1/([k][d]) = [G][PM]/[PL]                    A2prfradMetrnwtn
+     = ([Q0]^2)[Ke]/([aa][PM][PL]) = [4Pi][Ke]/[d]      C2ulfradkgrm
+(36) = ([a0]^2)([2af]^2)/([aa]^2)      = ([AUN velocity]^2)/([aa]^2)
++ 17.0107277  [He]/{[Q0]([a0]^2)([Ke]^.5)}          cuulF12dJuulm52r
+     = [B0][2af]/([Ke]^.5)                          F12dm12rscndTsla
+     = [Eg0]/([Ke]^.5)     = [AUN electric field gradient]/([Ke]^.5)
+     = {[Q0]/([a0]^3)}([Ke]^.5)      = [AUN charge density]([Ke]^.5)
+(15) = ([Me]^.5)([a0]^-1.5)[2af]           F12dm52rVltt=K12mm32rscnd
++ 17.0115785  [Q0]/([2][V0][d])                         Cuulhnrym2tr
++ 17.1926238  Baggiolini's age of universe = 1/[Hu]             Scnd
+- 17.2157661  [PV]([Pf]^2)                                  M3trs2nd
+- 17.3605390  [He] = [Ke]([Q0]^2)/[a0] = 2[Rc][h][c]            Juul
+(9)  = [Me]([a0]^2)([2af]^2) = Hartree energy           = AUN energy
+- 17.3957471  [PL]^.5                                           M12r
+- 17.4613373  ([PM]^2)[aa]                                      K2rm
+- 17.6534080  [Hu] = Hubble constant : B049                     scnd
+     = 21 ([Kilometer]/[Second])/([10^6][Lightyear])
+     = [10]^[-17.6534080] [Meter/Second]/Meter
+     = [10]^[-27.9298069] [Meter/Second]/[a0]
+     = [10]^[-32.2034763] [Meter/Second]/[Re]
+     = [10]^[-52.4449021] [Meter/Second]/[PL]
+     = [10]^[-36.4060259] {([Meter]^2)/[Second]}/[A0]
+     = [10]^[-53.5823127] {([Meter]^3)/[Second]}/[V0]
+    - 17.4893506 : B274; - 17.6150000 : B070; -17.1926238 : B272
+- 17.6615690  [Rc][h][c] = 13.605804 electron volts             Juul
+- 17.7548818  [u0]([Ke]^.5) = {[Q0][hB]/[Me]}([Ke]^.5)  K12mM72rs2nd
+     = [2][Bm]([Ke]^.5)      = [AUN magnetic dipole moment]([Ke]^.5)
+(22) =([Me]^.5)([a0]^3.5)([2af]^2) CuulF12dM32rscnd=f12dJuulM12rtsla
++ 17.7682104  [G]([PM]^2)[Pf]                               MetrWaat
+- 17.8378521  ([Q0]^2)[Ke]/([aa][PM]) = [G][PM]             M3trs2nd
++ 17.9550397  [f0]/[aa]                                         scnd
+- 17.9912662  [aa][d]/[Ke]                                  m2trS2nd
++ 18.0528513  [4Pi][c^2]                                    M2trs2nd
+- 18.1321578  {[Me][Mp]/([a0]^2)}^.5 = ([Fg]/[G])^.5        Kgrmmetr
+- 18.1369914  ([Q0]^2)/[A0]                                 C2ulm2tr
+- 18.1492245  ([Q0]^2)([a0]^2)[Ke]/[Me]             C2ulfradkgrmM3tr
+     = [He][Ke]/([B0]^2) = ([v0]^2)([a0]^3)         fradJuulMetrt2la
+     = ([a0]^3)[4Pi]([aa]^2)[Ke]/[d]                    fradhnryM5tr
+(23) = ([a0]^5)([2af]^2)  = [AUN magnetizability][Ke]       M5trs2nd
+- 18.2764772  [Q0]/{([4Pi][aa])^.5}  = [PC][PT]                 Cuul
+     as a unit of charge?  see B078, B079, B091 ; see (26)
++ 18.4118183  [4Pi][Q0]/([V0][d])                       Cuulhnrym2tr
++ 18.4159631  [v0]/{[c]([a0]^2)} = [aa]/([a0]^2)                m2tr
+- 18.4942597  2[Q0] = [h]/[w0]                                  Cuul
+- 18.6286758  [h]/[Re]                                  KgrmMetrscnd
+- 18.6524213  [hB]/([PM]^2)                             kgrmM2trscnd
+- 18.7875111  ([hB]^2)[aa]/{2([Me]^2)[c]}                   M3trscnd
+- 18.7952897  [Q0]                             Cuul=F12dK12mMetrscnd
+     = ([PM]^.5)([PL]^1.5)([Pf]^1)([aa]^.5)/([Ke]^.5)
+(11) = ([Me]^.5)([a0]^1.5)[2af]/([Ke]^.5)               = AUN charge
++ 19.0904761  [c^2]/aa]                                     M2trs2nd
++ 19.1143510  [PM]/[Mp]
+- 19.1180471  [Ke][a0][Q0]                              CuulfradM2tr
+- 19.4268557  [hB]/[Re]                                 KgrmMetrscnd
+- 19.4535879  [A0] = [4Pi]([a0]^2)                              M2tr
+- 19.5584980  ([a0][Pi])^2                                      M2tr
+- 19.6633141  [Fg]/[Mp]                                     kgrmNwtn
++ 19.6924621  [Fe]/[Mp]                                     Metrs2nd
++ 19.7641122  [a0]/[Me] = [Jf][Pi][Ke]/[B0]                 kgrmMetr
+- 19.7902427  [Hu][aa]                                          scnd
+- 19.9007901  [d]/[10^14]                                   Hnrymetr
++ 19.9072828  [Ke]^2                                        f2adM2tr
+- 19.9746867  ([Q0]^2)[Ke]/[PM]                     C2ulfradkgrmMetr
+- 20.0556479  [Pi]([a0]^2) = [A0]/4                             M2tr
+- 20.0868697  ([B0]^2)([a0]^3)                 M3trT2la=fradKgrmMetr
+(1)  = [Me][Ke]                                     = [AUN mass][Ke]
+- 20.0918744  [Me][c^2]/[h] = [f0]/([aa]^2)                     scnd
+- 20.1292422  [G]/[Ke] = [10^7][PL]/[PM]            FradkgrmM2trs2nd
+     = [G][4Pi]/([d][c^2])                              hnrykgrmM2tr
+- 20.1584550  [w0]/{[Pi]([Ke]^.5)}                      F12dWebrm12r
+     = [hB]/{[Q0]([Ke]^.5)}                     F12dcuulJuulm12rScnd
+     = 1/([Jf][Pi][Ke])                    K12mM12r=F12dm12rScndVltt
+(25) = ([Me]^.5)([a0]^.5)  = [Magnetic flux quantum]/{[Pi]([Ke]^.5)}
++ 20.1584550  [Jf][Pi]([Ke]^.5) ={2[Q0]/[h]}[Pi]([Ke]^.5)   k12mm12r
+(34) = {([Me]^-.5)([a0]^-.5)}    = [Josephson constant][Pi]([Ke]^.5)
+- 20.2300403  [a0]/[Ke]                                         Frad
++ 20.2414251  [aa][PM]/[Me] = [Re]/[PL]
+- 20.3512016  [G]^2                                     k2rmM6trs4nd
+- 20.5527977  [a0]^2 = 1/([Pi][Jf][B0])                         M2tr
+- 20.8900542  [hB]/([Me][c^2])                                  Scnd
+(4) = ([2af]^-1)([aa]^2) = Natural unit of time = [AUN time]([aa]^2)
+- 21.3098425  [Me]([G]^.5)/[Q0]([Ke]^.5)        cuulF12dM52rK12mscnd
+- 21.5636904  [Me][c]                                   KgrmMetrscnd
+(6)  = [Me][a0][2af]/[aa]                 = Natural unit of momentum
++ 21.9875484  [Eg0] = AUN electric field gradient           m2trVltt
+     = [He]/([Q0]([a0]^2)) = [B0][2af]         cuulJuulm2tr=scndTsla
+     = [Ke][Q0]/([a0]^3)                                Cuulfradm2tr
+(15) = ([Me]^.5)([a0]^-1.5)[2af]([Ke]^.5)           f12dK12mmetrscnd
+- 22.2345526  [Q0][h]/(2[Me])                           CuulM2trscnd
++ 22.3103058  [Q0]/([a0]^4)                                 Cuulm4tr
++ 22.3782598  [PM]/[Me] = [aa][a0]/[PL]
++ 22.4904428  [QeM]^2  = ([Gye]^2)/{([ue]/[Bm])^2}          C2ulk2rm
+     = (2[Bm]/[hB])^2 =([2af]/[B0])^2 ={[Eg0]/([B0]^2)}^2   H2tzt2la
+     = [G]([Fe]/[Fg])([Mp]/[Me])/[Ke]                   m4trt4laV2tt
+                   = [Electron gyromagnetic ratio]^2/{([ue]/[Bm])^2}
+(31) = ([Me]^-1)([a0]^3)([2af]^2)/[Ke]              FradkgrmM2trs2nd
+
++ 22.4914496  [Gye]^2 = {[QeM]([ue]/[Bm])}^2       C2ulk2rm=H2tzt2la
+     = (2[ue]/[hB])^2 = {[2af]/[B0]([ue]/[Bm])}^2   FradkgrmM2trs2nd
+     = {[G]([Fe]/[Fg])([Mp]/[Me])/[Ke]}{([ue]/[Bm])}^2
+  ={[Eg0]/([B0]^2)^2}{([ue]/[Bm])}^2=[Electron gyromagnetic ratio]^2
+(31) ={([Me]^-1)([a0]^3)([2af]^2)/[Ke]}{([ue]/[Bm])}^2  m4trt4laV2tt
+- 22.7317025  [u0] = 2[Bm] = [Q0][hB]/[Me]     Juultsla=CuulM2trscnd
+                                        = AUN magnetic dipole moment
+(22) = ([Me]^.5)([a0]^3.5)([2af]^2)/([Ke]^.5)       F12dK12mM3trs2nd
+- 22.8599163  [Bk] = Boltzmann constant                     degkJuul
+- 22.9023452  [Fe]/[f0] = [p0](2[Pi])                       Nwtnscnd
+- 22.9563709  [ae] = [Fe]/[Me]                              Metrs2nd
+- 23.0268889  [Re]/[c] = ([aa]^3)/[2af] = Nuclear unit of time  Scnd
+- 23.0322291  [ue] = Electron magnetic moment               Juultsla
+- 23.0327325  [Bm] = [Q0][hB]/(2[Me]) = Bohr magneton       Juultsla
++ 23.1229678  [Fe]/[V0]                                     m3trNwtn
+- 23.3557832  [Tp]=[h]/([Mp][c^2])=Proton time : B036           Scnd
+- 23.3632686  [Me][c^2][a0] = ([Q0]^2)[Ke]/([aa]^2)     KgrmM3trs2nd
+     = [G][([PM]^2)/[aa] = [FBH]([PL]^2)/[aa]  C2ulfradMetr=M2trNwtn
++ 23.4222990  [E0]^2 = ([He]^2)/{([Q0][a0])^2}          fradJuulm2tr
+     = ([Fe]/[Q0])^2 = {([Q0][Ke])/([a0]^2)}^2 = {[He]/([a0]^3)}[Ke]
+     = {[Ke][H0][4Pi]([aa]^2)}^2/([v0]^2) = [Ke][He]/([a0]^3)
+     = {[AUN magnetic field strength][4Pi]([aa]^2)[Ke]}^2/([v0]^2)}
+(30) = [Me]([a0]^-1)([2af]^2)[Ke]               = [AUN elec field]^2
++ 23.5300858  [FBH]([a0]^2)                                 M2trNwtn
+- 23.7005250  [p0] = [hB]/[a0]                          KgrmMetrscnd
+(6)  = [Me][a0][2af]                                  = AUN momentum
+- 23.7169153  [PRL]/[a0]
++ 23.7797510  [An] = Avagadro constant                          mool
+- 24.0948678  [q0]([Ke]^.5)                             K12mM52rscnd
+     = [Q0][a0]([Ke]^.5)                                Cuulf12dM32r
+(16) =([Me]^.5)([a0]^2.5)[2af]=[AUN electric dipole moment]([Ke]^.5)
+- 24.5150947  [PL]/[a0] = [aa][Me]/[PM] = [2af]/([aa][Pf])
++ 24.6158927  [c^2]/[PM]                                kgrmM2trs2nd
+- 24.7019234  [h][c]                                        JuulMetr
++ 24.9912662  [c^2]/([d][aa])                           hnryM3trs2nd
++ 24.9918352  [PC] = {[k]([PL]^3)[PM]([Pf]^4)}^.5               Ampr
+    = Planck current: B078, B079, B091; see +25.0226277, +25.5414401
++ 25.0226277 = {([PM]^.5)([PL]^1.5)([Pf]^2)/([Ke][4Pi][aa]^.5)
+- 25.3132741  [f0]/([aa][Pf]) = [PL]/([2Pi][a0])
+- 25.3477103  [um] = Muon magnetic moment                   Juultsla
++ 25.4292317  [Lcn] = [An]/[Vmi] = Loschmidt constant           m3tr
++ 25.4304621  [c^3]                                         M3trs3nd
+- 25.4942597  [d][Q0]/[2Pi]                             CuulHnrymetr
+- 25.5001032  ([Q0]^2)[Ke]/[aa]=[hB][c]                 C2ulfradMetr
+     - 25.5001034 = [G]([PM]^2)                    NwtnM2tr=JuulMetr
+     - 25.500104 = [PM][PL][c^2]                        KgrmM3trs2nd
++ 25.5414401  ([PM]^.5)([PL]^1.5)([Pf]^2)/([Ke]^.5)             Ampr
+- 25.6029195  [Re][k]                                           Frad
++ 25.6669205  [FBH]([a0]^2)/[aa]                            M2trNwtn
++ 25.6694445  Baggiolini's radius of curvature of universe      Metr
+- 25.8505941  [up] = Proton magnetic moment                 Juultsla
+- 25.8506052  Shielded proton magnetic moment               Juultsla
+- 25.9687722  Shielded helion magnetic moment               Juultsla
+- 26.0149166  [un] = Neutron magnetic moment                Juultsla
++ 26.1302287  [c]/[Hu] as age of universe; see B272 also B076   Scnd
+- 26.1775275  [Ma] = Alpha particle mass                        Kgrm
+- 26.2966413  [Nm] = [Q0][hB]/(2[Mp]) = Nuclear magneton    Juultsla
+- 26.3004734  [Mh] = Helion mass                                Kgrm
+- 26.3146734  [c][PL]                                       M2trscnd
+- 26.3634384  deuteron magnetic moment                      Juultsla
+- 26.4757878  [Md] = Deuteron mass                              Kgrm
+- 26.4992464  [Mt] = Tau mass                                   Kgrm
+- 26.6120964  [Q0]/([Ke][aa])                           CoulFradmetr
++ 26.6519294  [Pf]/[2af] = [a0]/([PL][aa]) = [PE]/[He]
+- 26.6758042  [Fg][a0]/[Me]                                 M2trs2nd
+- 26.7760040  [Mn] = Neutron mass                               Kgrm
+- 26.7766023  [Mp] = Proton mass                                Kgrm
+- 26.7797510  [amu] = Atomic mass unit                          Kgrm
+- 26.8282122  2[G]/[c^2] = [Black hole requirement]         kgrmMetr
++ 26.8927838  [2af]/[a0] = [v0]/([a0]^2)                    metrscnd
+- 26.9863285  [Fg]/[A0]                                     m2trNwtn
++ 27.0433408  ([Q0]^2)[Ke][aa]/([MP][Me])           C2ulfradk2rmMetr
+- 27.1292422  [BHR] = [G]/[c^2] = [G][d][k] = [PL]/[PM]     kgrmMetr
+     = Radius to Mass ratio = [Black hole requirement]/2
+     = ([d]/[4Pi])([G]/[Ke]) = [10^-7][10^-20.1292422]
+- 27.2721104  [c]/[Q0]                                  cuulMetrscnd
+- 27.3141804  [Me]([aa]^2)[4Pi]/[d]                     hnryKgrmMetr
+     = [Me]([Re]/[a0])[4Pi]/[d] = ([Q0]^2)/[a0]             C2ulmetr
++ 27.4501088  [Pf]/[f0]
+- 27.6369379  ([Q0]^2)([Ke]) = [hB][v0]        C2ulfradMetr=JuulMetr
+     = ([Q0]^2)/(4[k][Pi]) = [He][a0]      M4trPscl=FradM5trs2ndT2la
+     = [Me][Re][c^2] = [G]([PM]^2)[aa]     MetrScndWaat=hnryMetrW2br
+     = ([Q0]^2)[z0][c]/[4Pi] = [PM][PL][c^2][aa]    C2ulMetrOhmmscnd
+(10) = [Me]([a0]^3)([2af]^2) = ([AUN charge]^2)[Ke]     KgrmM3trs2nd
+- 27.7250271  [Mm] = Mass of muon                               Kgrm
+- 27.7914951  [PL][4Pi]/[d]                                 hnryM2tr
++ 27.8037552  [FBH]([a0]^2)/([aa]^2)                        M2trNwtn
+- 27.9036764  [Me]/[aa]                                         Kgrm
+- 28.0009266  [4Pi]([Re]^2)                                     M2tr
+- 28.1028659  ([Q0]^2)([a0]^2)/[Me]                     C2ulkgrmM2tr
+     = [He]/([B0]^2)                                        Juult2la
+     = ([v0]^2)([a0]^3)/[Ke] = ([a0]^3)[4Pi]([aa]^2)/[d]    hnryM4tr
+(23) = ([a0]^5)([2af]^2)/[Ke]   = AUN magnetizability   FradM4trs2nd
+- 28.1770178  [Tc]=[2/3][4Pi]([Re]^2)=Thomson cross section     M2tr
+- 28.4085567  ([Me][Mp])^.5                                     Kgrm
+- 28.4133903  [Me]([aa]^2)/[d]                          hnryKgrmMetr
+     = ([Q0]^2)/([4Pi][a0])     see - 27.31418043           C2ulmetr
++ 28.6647740  [He][f0]/[V0]                                 m3trWaat
+- 28.7489311  [Q0]/[Ke]                                 CoulFradmetr
+- 29.0001032  [hB]([Ke]^.5)                         f12dJuulM12rScnd
++ 28.9029651  [4Pi][FBH]([a0]^2)/([aa]^2)                   Juulmetr
+- 29.0716885  [q0] = [Q0][a0]              CuulMetr=F12dK12mM2trscnd
+(16) =([Me]^.5)([a0]^2.5)[2af]/([Ke]^.5) =AUN electric dipole moment
+- 29.1001364  [Re]^2                                            M2tr
++ 29.1801755  ([Q0]^2)[Ke]/([MP][Me])               C2ulfradk2rmMetr
++ 29.2868626  [He][f0]/([a0]^3)                             m3trWaat
+- 29.3689688  ([w0]^2) = ([hB][Pi])^2/([Q0]^2)     W2br=c2ulJ2ulS2nd
+     = ([PM][PL]/[aa]){([Pi]^2)[Ke]}                    fradKgrmM2tr
+(32) = [Me][a0]([Pi]^2)[Ke]              = [Magnetic flux quantum]^2
+- 29.5433612  [Me][Pi]                                          Kgrm
+- 30.0405111  [Me] = Electron mass = Natural unit of mass       Kgrm
+     = ([B0]^2)([a0]^3)/[Ke]                            FradM2trT2la
+     = ([B0]^2)[AUN electric polarizability]        C2uljuulM2trT2la
+     = ([Q0]^2)[d]/{[a0][4Pi]([aa]^2)}                  C2ulHnrym2tr
+     = ([i0]^2)[RK]/{[2af]([v0]^2)[2Pi]}            A2prOhmmm2trS3nd
+     = [Ke]([Q0]^2)/{([v0]^2)[a0]}                  C2ulfradm2trS2nd
+     = [Q0][B0]/[2af]                                   CuulScndTsla
+(1)  = [Me]                                               = AUN mass
+- 30.2071080  [V0] = ([4Pi]/3)([a0]^3])                         M3tr
+- 30.3632686  {([w0])^2}/([Pi]^2) = ([hB]/[Q0])^2  W2br=c2ulJ2ulS2nd
+     = [Ke][PM][PL]/[aa]                                fradKgrmM2tr
+(32) = [Me][a0][Ke]               = ([Magnetic flux quantum]/[Pi])^2
+- 30.4348539  ([Me]^.5)([a0]^1.5)                           K12mM32r
++ 30.5064391  [Fe]/([Q0]^2)                                 c2ulNwtn
++ 30.5182608  ([PM]^.5)([PL]^1.5)([Pf]^2)               K12mM32rs2nd
+- 30.5905793  ([Q0]^2)[4Pi]/[d]                         C2ulhnryMetr
+- 30.8291966  {([Q0]^2)([a0]^2)/[He]}[Ke]      C2ulfradM3trjuul=M3tr
+     = [Q0][Ke]/([B0][2af])                     CuulfradMetrScndtsla
+(18) = [a0]^3 = [Ke][Me]/([B0]^2) =[AUN electric polarizability][Ke]
++ 31.6364101  [f0]^2                                            s2nd
+- 31.6897892  ([Q0]^2)/[d]                              C2ulhnryMetr
++ 32.1513055  Planck Temperature                                DegK
++ 32.4440843  ([QeM]^2)[Ke] = [Ke]([Gye][Bm]/[ue])^2    kgrmM3trs2nd
+     = [Ke](2[Bm]/[hB])^2 = [Ke]([2af]/[B0])^2      fradH2tzMetrt2la
+    =([2af]^2)[Ke]/([B0]^2) =[Ke]([Eg0]^2)/([B0]^4) C2ulfradk2rmMetr
+    =[Re][c^2]/[Me] = 1/(Gresky's dielectric constant of free space)
+     = {([Electron gyromagnetic ratio]^2)[Ke]}/{([ue]/[Bm])^2}
+     = [c^2](Gresky's electronic constant of magnetic permeability)
+(31) = ([Me]^-1)([a0]^3)([2af]^2)        = [G]([Fe]/[Fg])([Mp]/[Me])
++ 32.4450910 ([Gye]^2)[Ke] = ([QeM]^2)[Ke]{([ue]/[Bm])^2}
+     = 4[Ke]([ue]/[hB])^2 = [Ke]{([2af][ue])^2}/{([Bm][B0])^2}
+     = {[G]([Fe]/[Fg])([Mp]/[Me]){([ue]/[Bm])^2}    fradMetrs2ndt2la
+     = [Ke]{([Eg0][ue])^2}/{([B0]^4)([Bm]^2)}       C2ulfradk2rmMetr
+     = [Ke]([Electron gyromagnetic ratio]^2)
+(31) = ([Me]^-1)([a0]^3)([2af]^2)([ue]/[Bm])^2          kgrmM3trs2nd
+- 32.7274140  ([Q0]^2)[10^7][aa]                        C2ulhnryMetr
+- 33.1787440  [h] = [2Pi][hB] = Planck constant             JuulScnd
+- 33.2149706  ([Q0]^2)[d]/[a0]                                  Kgrm
++ 33.2327698  [2af]^2                                           s2nd
+- 33.3169100  ([Q0]^2)/([aa]^2)                                 C2ul
++ 33.8064847  [FBH][a0]                                         Juul
+- 33.8288665  ([h][G][aa][Mp]/{[Me]([c]^3)})^.5                 Metr
+     = Baggiolini's metron : B272
++ 33.9072828  [c^4]                                         M2trs2nd
++ 33.9741081  [PM][Pf]/(([Mp]/[Me])^.5)                     Kgrmscnd
+- 33.9769239  [hB] = [He]/([4Pi][Rc][c]) = [PM][PL][c]      JuulScnd
+     = [Ke]([Q0]^2)/[v0] = [B0][Q0]([a0]^2)             CuulM2trTsla
+(7)  = [Me]([a0]^2)[2af] = [Q0][w0]/[Pi]                = AUN action
+- 33.9933142  [PRL] = [2Pi][PL]                                 Metr
+- 34.2697929  [Hu]/[2af]
+- 34.3141804  [Me]([aa]^2) = [He]/[c^2] = [PM][2af]/[Pf]        Kgrm
++ 34.3319797  [4Pi]([2af]^2)                                    s2nd
+- 34.3712667  [qD0]([Ke]^.5) = [Q0]([a0]^2)([Ke]^.5)    Cuulf12dM52r
+                         = [AUN electric quadrupole moment]([Ke]^.5)
+(17) =([Me]^.5)([a0]^3.5)[2af]                          K12mM72rscnd
+- 34.7210781  [He]^2                                            J2ul
+- 34.7751038  [Me]([a0]^2)[f0]                          KgrmM2trscnd
+- 34.7914941  [PL] = [G][PM]/[c^2] = [a0]([Me][aa]/[PM])        Metr
++ 35.0173318  ([Ke]^.5)/[Me]                            f12dM12rkgrm
+- 35.3068160  [Hu]^2                                            s2nd
+- 35.4116746  [Me]/[B0] = [Q0]/[2af]               Kgrmtsla=CuulScnd
+- 35.5896740  [PL]/[2Pi]                                        Metr
++ 35.6060629  [c^3]/[G] = [PM][Pf]                          Kgrmscnd
+- 35.6088783  [hB](([Me]/[Mp])^.5)                          JuulScnd
+- 35.7489311  [1 eV]/[c^2]                                      Kgrm
++ 36.0441175  [c^4]/[aa]                                    M4trs4nd
++ 36.0918675  ([Fe]/[Fg])/([Mp]/[Me]) = ([Q0]^2)[Ke]/{[G]([Mp]^2)}
+- 36.2643156  [Me][Mp]/([a0]^2) = [Fg]/[G]                  K2rmm2tr
+- 36.9522031  ([a0]^2)[Fg]/[Me]                             M3trs2nd
+- 37.4436507  ([Hu]^2)[aa]                                      s2nd
+- 37.5635254  {{([Q0][a0])^3}/([He]^2)}([Ke]^1.5)   C3ulf32dj2ulM92r
+                           = [AUN 1st hyperpolarizability]([Ke]^1.5)
+(19) = ([Me]^-.5)([a0]^3.5)([2af]^-1)                   k12mM72rScnd
+- 37.5905793  [Q0]^2 = [G]([PM]^2)[aa]/[Ke]    C2ul=FradKgrmM2trs2nd
+     = [PM][PL][4Pi][aa]/[d] = [Me][Re]([4Pi]/[d])      hnryKgrmM2tr
+(10) = [Me]([a0]^3)([2af]^2)/[Ke] = [AUN charge]^2  A2prKgrmMetrnwtn
++ 37.8152477  ([2af]^2)[Ke]/[B0]                    fradMetrs2ndtsla
+     = ([Q0]^2)[Ke][B0]/([Me]^2)                C2ulfradk2rmMetrTsla
+- 37.9133368  [Fe]([a0]^3) = [Ke]([Q0]^2)[a0]  C2ulfradM2tr=M3trNwtn
+- 38.2287022  [G]([Mp]^2)/([hB][c]) = ([Mp]^2)/([PM]^2) : B075
++ 38.9411729  [Fe][f0]/[V0]                             m3trNwtnscnd
+- 39.0647249  [G]([PM]^1.5)([PL]^.5)                    K12mM72rs2nd
+     = {([G]/[c^2])^.5}{[G]([PM]^2)} = ([PM]^.5)([PL]^3.5)([Pf]^2)
+- 39.3480874  [qD0] = [Q0]([a0]^2)  = AUN electric quadrupole moment
+(17) = ([Me]^.5)([a0]^3.5)[2af]/([Ke]^.5)  CuulM2tr=F12dK12mM3trscnd
++ 39.3557763  [Fe]/[Fg] = ([Q0]^2)[Ke]/([G][Me][Mp])
+     = [PM][Pf]([aa]^3)/([Mp][2af])
+     = ([PM]^2)[aa]/([Me][Mp]) = [a0][PM]([aa]^2)/([Mp][PL])
+     = Ratio of Bohr atom electrical force to gravitational force
+     = [Radius of Universe]/[a0] : B076, B092
+     = [Age of universe]/[nuclear unit of time] : B076, B092
+- 39.9941525  ([Q0]^2)/{([v0]^2)[a0]}                   C2ulm3trS2nd
+     = ([Q0]^2)[d]/{[a0][Ke]([aa]^2)[4Pi]}              FradKgrmmetr
+(1)  = [Me]/[Ke]                                   = [AUN mass]/[Ke]
+- 40.3169100  ([w0]^2)/{([Pi]^2)[Ke]} = [PM][PL]/[aa]   FradmetrW2br
+   =([hB]^2)/{([Q0]^2)[Ke]}=([Q0]^2)[d]/{[4Pi]([aa]^2)} C2ulHnrymetr
+(32) =[Me][a0] =([Magnetic flux quantum]^2)/{([Pi]^2)[Ke]}  KgrmMetr
+- 40.7828380  {([Q0][a0])^2}/[He] = [Me]/([B0]^2)       C2uljuulM2tr
+     = [Q0]/([B0][2af])                                 CuulScndtsla
+(18) =([a0]^3)/[Ke] = AUN electric polarizability  FradM2tr=Kgrmt2la
+- 41.1055955  [a0]^4                                            M4tr
+- 41.3141804  [Me]([aa]^2)[d]/[4Pi]                     HnryKgrmmetr
++ 41.4926110  ([hB][c])/[G][Me][Mp] = ([PM]^2)/([Me][Mp])
+- 41.6555648  [h]/[c]                                       KgrmMetr
+- 42.3056872  ([Mp][h][G][aa]/{[Me]([c]^5)})^.5                 Scnd
+     = Baggiolini's cronos : B272
+- 42.4537446  [Me][a0][aa] =[hB]/[c]  KgrmMetr=C2ulHnrymetr
+     = ([Q0]^2)[d]/([aa][4Pi]) = ([Q0]^2)[Ke]/([c^2][aa])
+     = - 42.4537454 = [PL][PM]
+- 42.6196851  ([Fg][Me])/([Fe][Mp]) = {([Me]^2)[G]}/{([Q0]^2)[Ke]}
+     = - 42.6196863 = ([PL]^2)/{([a0]^2)([aa]^3)}
+- 43.0281160  [4/3][Pi]([Re]^3)                                 M3tr
+- 43.1760076  [Fgp] = [G]([Mp]^2)/([a0]^2)                      Nwtn
++ 43.2683138  [Pf] = Planck frequency  = 1/[PT]                 Hrtz
++ 43.2847037  [FBH]/(2[Pi])                                     Nwtn
+- 43.4913695  ([Q0]^2)[d]                               C2ulHnrymetr
+- 43.6294456  [Fg][a0]/([Me][c^2])
+- 43.6502046  [Re]^3                                            M3tr
++ 43.9305653  [Ke]/[hB]                                 Hnrykgrmscnd
+- 44.0415482  ([PM]^.5)([PL]^3.5)([Pf]^2)/([Ke]^.5) F12dK12mM3trs2nd
++ 44.0828836  [FBH] = [c^4]/[G]                                 Nwtn
+   + 44.0828848 = {[G]([PM]^2)/([PL]^2)
+- 44.0934294  [Me][Re][Pi]                                  KgrmMetr
+- 44.2533229  [Me]([a0]^3)[2af]                         KgrmM3trscnd
+- 44.2978542  {([Q0][a0])^4}/([He]^3)}([Ke]^2)      C4ulf2adj3ulM6tr
+                               = [AUN 2nd hyperpolarizability][Ke]^2
+(20) = ([Me]^-1)([a0]^4)([2af]^-2)                      kgrmM4trS2nd
++ 44.4829790  [He]([f0]^2)/[V0]                         Kgrmmetrs4nd
+- 44.5905793  [Me][Re] = ([Q0]^2)[d]/[4Pi]     KgrmMetr=C2ulHnrymetr
+     = [Me][a0]([aa]^2) = [Me][a0]([v0]^2)[d]/([Ke][4Pi])
+     - 44.5905801 = [PM][PL][aa]
+- 44.7565196  ([Me]^2)/([PM]^2)
+- 45.0877292  [Me][Re]/[Pi]                                 KgrmMetr
++ 45.2811589  [2Pi][He]([f0]^2)/[V0]                    Kgrmmetrs4nd
+- 45.4051485  [PT][aa]                                          Scnd
+- 45.8587161  [Me]/[f0]                                     KgrmScnd
++ 46.2813046  ([4Pi]^2)[FBH]                                    Nwtn
+- 46.4399164  [Fg] = [G][Me][Mp]/([a0]^2)                       Nwtn
+     = [Fe][Me][Mp]/{([PM]^2)[aa]}
+- 46.6568960  [Me]/[2af]  = [PM][PT]/([aa]^2)               KgrmScnd
++ 46.8234929  [2af]/[V0]                                    m3trscnd
++ 46.8933543  [aa]([PM]^2)/([Me]^2) = [aa]([PM][Pf]/([Me][2af])
+     = + 46.8933557 = [aa]([a0]^2)/([PL]^2)
+- 46.9941525  [Me]/[c^2]                   Kgrmm2trS2nd=HnryKgrmmetr
+- 47.3169100  [Me][a0][d]/[4Pi]                             HnryKgrm
++ 47.9839480  2{(Me][c^2])/([Re][aa])}{[G]([PM]^2)/([PL]^2)}    N2tn
++ 48.3561156  ([PM]^.5)/([PL]^1.5)                          Kgrmmetr
+- 49.0301904  [PA]/[A0] = {4Pi]([PL]^2)/{[4Pi]([a0]^2)}
+- 49.6244863  [Q0]([a0^3)                                    CulM3tr
+- 49.7038252  [Fge] = [G]([Me]^2)/([a0]^2)                      Nwtn
+- 49.8905260  ([PL]^2)[Fe]/[Mp]                             M3trs2nd
+- 50.1323855  [h]/[c^2]                                     KgrmScnd
+- 50.5933089  [Me]([a0]^2)                                  M2trKgrm
+- 50.9305653  [hB]/[c^2]                                    KgrmScnd
+     - 50.9305651 = [PM][PT]
++ 51.1670249  [FBH]/[Fe]
++ 51.7451335  [aBH] = [c][Pf]                               Metrs2nd
+- 52.4939875 {([Q0][a0])^3}/([He]^2)                    C3ulj2ulM3tr
+                                       = AUN 1st hyperpolarizability
+(19) = ([Me]^-.5)([a0]^3.5)([2af]^-1)/([Ke]^1.5)    F32dk12mM2trScnd
++ 52.5597039  [PPw] =[PE]/[PT] =[PM][c^2][Pf] =Planck power     Waat
++ 52.7986867  Baggiolini's mass of the universe : B272          Kgrm
++ 53.3329362  {([PM]^.5)/([PL]^1.5)}([Ke]^.5)                   Tsla
+- 53.5532046  [Mp]^2                                            K2rm
++ 54.2584856  ([PM]^2)/([PL]^2)                             K2rmm2tr
++ 54.3592837  [FBH]/[a0]                                    metrNwtn
+- 54.5442207  ([Q0]^2)/[c^2]                            C2ulm2trS2nd
+- 56.0183668  ([PM]^.5)([PL]^1.5)                           K12mM32r
+- 56.7163153  [Fg][a0]                                      MetrNwtn
+- 56.8171134  [Me][Mp]                                          K2rm
+- 58.0002064  ([hB]^2)[Ke]                          fradJ2ulMetrS2nd
++ 59.4983110  : natural log is about 137 : about 1/[aa];
+     = Radius of curvature of universe in metrons = age in cronos
+     = Mass of universe in pondus: Baggiolini : B272
+- 60.0810222  [Me]^2                                            K2rm
+- 60.8697078  [Me]([a0]^3                                   KgrmM3tr
+- 61.9207369  ([PL]^2)/[PM]                                 kgrmM2tr
+- 62.2581214  [Fg]/[f0]                                 KgrmMetrscnd
+- 63.7288054  [G]([Mp]^2)                                   M2trNwtn
+- 64.2051370  {([Q0][a0])^4}/([He]^3)  C4ulj3ulM4tr=F2adkgrmM2trS2nd
+(20) =([Me]^-1)([a0]^4)/{([2af][Ke])^2} =AUN 2nd hyperpolarizability
+- 65.2582783  [4Pi]([h]^2)                                  J2ulS2nd
+- 66.3574881  [h]^2                                         J2ulS2nd
++ 66.4655396  [2af]^4                                           s4nd
+- 66.8546380  [4Pi]([hB]^2)                                 J2ulS2nd
+- 66.9927142  [G][Me][Mp] = [Fg]([a0]^2)                    M2trNwtn
+- 67.6310905  [Me][Q0]^2                                    C2ulKgrm
+- 67.9538478  [hB]^2                                        J2ulS2nd
+- 67.9866284  [PRL]^2 = (2[Pi][PL])^2                           M2tr
+- 68.4837783  [PA] = [4Pi]([PL]^2)                              M2tr
++ 69.2983477  [Pp]/[PA]                                 Kgrmmetrscnd
+- 69.5829882  [PL]^2                                            M2tr
+- 70.2566230  ([G]([Me]^2)                                  M2trNwtn
++ 70.3975576  [Pp]/([PL]^2)                             Kgrmmetrscnd
+- 71.7198229  [aa]([PL]^2)                                      M2tr
+- 72.5286312  {[Me][Mp]/([a0]^2)}^2 = ([Fg]/[G])^2          K4rmm4tr
+- 73.5452856  ([PL]^3)/([a0]^3)
+- 77.2452395  ([PL]^2)[PM]                                  KgrmM2tr
+- 77.9074892  ([hB]^2)/[Ke]                         FradJ2ulmetrS2nd
+- 78.0598079  [PL][PT]                                      MetrScnd
++ 86.5366276  [Pf]^2                                            s2nd
++ 90.5228012  [FBH]/[Fg]
+- 95.9235454  ([PL]^3)[Me]/{([a0]^3)[PM]}
++ 96.0901424  [PM]/[PV]                                     Kgrmm3tr
++ 96.7122310  [PM]/([PL]^3)                                 Kgrmm3tr
+-103.7523937  [PV] = [4/3][Pi]([PL]^3)                          M3tr
+-104.3744823  [PL]^3                                            M3tr
++104.5669631  [Pp]/[PV]                                 Kgrmm2trscnd
+-104.9525917  [PL][PT][a0]/[2af]                            M2trS2nd
++106.6658724  {[PM]/([PL]^3)}[Ke]                       fradKgrmm2tr
+-112.0367336  ([PL]^3)[PM]                                  KgrmM3tr
++113.0437839  [PE]/[PV]                                     Juulm3tr
++113.6658704  [PM]([Pf]^2)/[PL]                             Juulm3tr
++117.5583066  [FBH][Pf]/[V0]                            Kgrmm2trs3nd
++147.8352785  [FBH]/[PV]                                    m3trNwtn
++191.1035923  [FBH][Pf]/[PV]                            m3trNwtnscnd
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!++!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  2.9350145  4.4118183 13.4241262 13.8184690 15.4904429 16.2225455
+ 18.2764772 24.9918352 25.5001032 30.0405111 30.8291966 32.4450910
+ 33.9769239 39.3557763 40.3169100 42.4537446 42.6196851 44.5905793
+=================================++=================================
